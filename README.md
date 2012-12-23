@@ -31,7 +31,7 @@ Alors comme l'indique son nom, du java (la base est le framework **Spark**), mai
 - **Pull request acceptées**, surtout si elles sont simples, et améliorent le "design" du code & de l'architecture
 
 
-**Les explications pour créer N3rd.stack:[java] "from scratch" sont ici : [/tree/master/doc](/tree/master/doc)**
+**Les explications pour créer N3rd.stack:[java] "from scratch" sont ici : [n3rd_stack_java/tree/master/doc](n3rd_stack_java/tree/master/doc)**
 
 
 >>*Attention le répertoire `doc` n'est pas le mode d'emploi de N3rd.stack:[java], mais l'explication de sa "création". Il y aura cependant un chapitre dédié à uniquement son utilisation en l'état.*
