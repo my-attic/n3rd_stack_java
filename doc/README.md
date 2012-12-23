@@ -689,7 +689,7 @@ public class Main {
 
 ##La suite ?
 
-- Mettre en oeuvre de persistence
+- Mettre en oeuvre la persistence
 - Améliorer l'exemple javascript et html
 
 
