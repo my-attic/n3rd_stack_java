@@ -5,36 +5,46 @@ Je me suis refusé à utiliser Maven, car je ne le maîtrise pas, et je voulais 
 ##Initialisation du projet
 
 Pour initialiser le projet, choisir : File + New Project, et choisir "Command Line App" :
-![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/000-new_project.png?raw=true)\
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/000-new_project.png?raw=true)
 
+Ne rien cocher dans l'écran suivant (clickez sur Finnish) :
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/001-new_project.png?raw=true)
 
-
-###Nouveau Projet
+Et vous obtenez ainsi votre squelette de projet.
 
 ###Préparatifs de base
 
-Ajoutez un fichier README.md à la racine, ça fait "comme les vrais".
-Faites vous répertoire doc, où vous allez raconter la vie de votre projet
-Un petit répertoire lib dans lequel vous mettrez vos librairies externes (jar) et ça vous permettra ainsi de les distribuer simplement via git (je ne vous ai pas dit, on va utiliser github, je n'explique pas comment ça marche, mais vous trouverez de bonnes explications ici []() ou là []())
+- Ajoutez un fichier README.md à la racine, ça fait "comme les vrais".
+- Faites vous répertoire doc, où vous allez raconter la vie de votre projet
+- Ajoutez Un petit répertoire lib dans lequel vous mettrez vos librairies externes (jar) et ça vous permettra ainsi de les distribuer simplement via git (je ne vous ai pas dit, on va utiliser github, je n'explique pas comment ça marche, mais vous trouverez de bonnes explications sur le net).
 
 >>**PS :** *l'utilisation de Git & GitHub n'est pas obligatoire, c'est uniquement si vous voulez créer votre propre projet*
 
 J'ai mis un fichier README.md aussi dans le répertoire, pour qu'il ne soit pas vide et qu'il soit créé chez GitHub au moment où je vais "pousser" ma structure de projet.
 
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/002-new_project.png?raw=true)
+
 
 ###On "envoie" ça à GitHub
 
+Pour vérifier que cela fonctionne, nous allons déjà "pousser" le peu de choses faites à GitHub, en images :
 
-En haut à gauche vous remarquerez la pub pour Mix-It [](). Il faut y aller.
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/003-github.png?raw=true)
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/004-github.png?raw=true)
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/005-github.png?raw=true)
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/006-github.png?raw=true)
+
+
+Et voilà le résultat. *En haut à gauche vous remarquerez la pub pour Mix-It [http://www.mix-it.fr/](http://www.mix-it.fr/). Il faut y aller*.
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/007-github.png?raw=true)
 
 ##On fait son marché : Le serveur
 
-> Serveur + Routeur
-> un 1er helper
-
-J'avais tout d'abord besoin de quelque chose qui fasse office de serveur web et routeur. Mon choix s'est porté sur **Spark** (bookmarqué il y a un moment, c'est @loic_d qui m'en avait parlé à l'époque) . Allons donc faire un tour ici [http://www.sparkjava.com/](http://www.sparkjava.com/).
-
-    //TODO : décrire Spark rapidement
+J'avais tout d'abord besoin de quelque chose qui fasse office de serveur web et routeur. Mon choix s'est porté sur **Spark** (bookmarqué il y a un moment, c'est [@loicdescotte](https://github.com/loicdescotte) qui m'en avait parlé à l'époque) . Allons donc faire un tour ici [http://www.sparkjava.com/](http://www.sparkjava.com/) pour récupérer le bébé (profitez-en pour lire un peu la doc, ce n'est pas trop long).
 
 Pour télécharger, c'est ici [http://code.google.com/p/spark-java/downloads/list](http://code.google.com/p/spark-java/downloads/list), j'ai utilisé : [http://spark-java.googlecode.com/files/spark-0.9.9.4-SNAPSHOT.zip](http://spark-java.googlecode.com/files/spark-0.9.9.4-SNAPSHOT.zip).
 
@@ -42,11 +52,17 @@ Il faut aussi les dépendances : [http://spark-java.googlecode.com/files/spark-d
 
 Vous dézippez, vous coller `spark-0.9.9.4-SNAPSHOT.jar` dans votre répertoire `lib`. Ensuite allons faire référence à notre jar dans les propriétés du projet : click droit sur la branche du projet et choisir **Open Module Settings**.
 
-    //TODO: ici les images
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/008-libs.png?raw=true)
 
-le plugin git va vous poser une question, dites non (clicker sur non/no)
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/009-libs.png?raw=true)
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/010-libs.png?raw=true)
+
+Si le plugin git vous pose une question, du genre "est-ce que vous voukez mettre en conf je ne sais quel fichier xml", dites non (clicker sur non/no).
 
 Faites de même avec les jars contenus dans `spark-dependencies_0.9.9.3_and_newer.zip`
+
+Vous êtes prêts pour entrer dans le vif du sujet ... Tadaaaa
 
 ##1ère utilisation de Spark
 
@@ -80,11 +96,17 @@ public class Main {
 }
 ```
 
-Compilez, lancez & Ouvrez votre navigateur [http://localhost:9000/about](http://localhost:9000/about) puis [http://localhost:9000/about.json](http://localhost:9000/about.json)
+Compilez, lancez & Ouvrez votre navigateur avec l'url [http://localhost:9000/about](http://localhost:9000/about) puis [http://localhost:9000/about.json](http://localhost:9000/about.json)
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/011-launch.png?raw=true)
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/012-launch.png?raw=true)
 
 ##J'aimerais "servir" des fichiers statiques
 
-Je voudrais pouvoir faire référence à des fichiers statiques. C'est à dire, lorsque je fais [http://localhost:9000](http://localhost:9000), j'arriverais directement sur `index.html` et toutes les autres ressources définies dans la page (css, js, ...) seraient chargées. C'est la partie qui finalement m'a donné le plus de fil à retordre. Pour se faire, mon point de départ, mon inspiration, ... viennent de là : [https://github.com/perwendel/spark/issues/3](https://github.com/perwendel/spark/issues/3)
+Je voudrais pouvoir faire référence à des fichiers statiques. C'est à dire, lorsque je fais [http://localhost:9000](http://localhost:9000), j'arriverais directement sur `index.html` et toutes les autres ressources définies dans la page (css, js, ...) seraient chargées. C'est la partie qui finalement m'a donné le plus de fil à retordre. Pour se faire, mon point de départ, mon inspiration, ... viennent d'ici : [https://github.com/perwendel/spark/issues/3](https://github.com/perwendel/spark/issues/3).
+
+Mais préparons nos fichiers statiques.
 
 ###Préparation des fichiers
 
@@ -102,6 +124,8 @@ Avant d'aller modifier le code, préparons notre projet :
     - **YepNope** : [https://raw.github.com/SlexAxton/yepnope.js/master/yepnope.1.5.4-min.js](https://raw.github.com/SlexAxton/yepnope.js/master/yepnope.1.5.4-min.js)
 
 Ensuite préparez les styles, nous n'allons pas faire comme tout le monde (twitter bootstrap, après libre à vous de changer), nous allons utiliser **Skeleton** : [http://www.getskeleton.com/#download](http://www.getskeleton.com/#download). Téléchargez, puis copiez les fichiers css dans le répertoire `public/css`.
+
+>>*Nous n'allons pas nous servir de tous les frameworks javascript téléchargés, on se les garde pour plus tard*
 
 ###Préparation de main.js
 
@@ -305,7 +329,7 @@ public class Main {
 
 Maintenant, compilez, lancez, ouvrez [http://localhost:9000/](http://localhost:9000/) :
 
-    //TODO image
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/013-static.png?raw=true)
 
 Ouvrez la console du navigateur, et tapez le code javascript suivant :
 
@@ -317,6 +341,10 @@ $.ajax({type:"GET", url:"/about.json",
 ```
 
 Vous obtenez :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/014-static.png?raw=true)
+
+**Votre 1er service JSON avec votre killer stack !**
 
 
 ##J'ai besoin de parler JSON avec mes objets java
@@ -471,7 +499,7 @@ post(new Route("/humans") {
 
 Maintenant, compilez, lancez, ouvrez [http://localhost:9000/](http://localhost:9000/) :
 
-Ouvrez la console du navigateur, et tapez le code javascript suivant :
+Ouvrez la console du navigateur, et tapez le code javascript suivant pour faire une requête de type GET (et appeler notre "route" `get(new Route("/humans/:id")`) :
 
 ```javascript
 var Human = Backbone.Model.extend({urlRoot:'/humans'});
@@ -479,11 +507,18 @@ var john = new Human({id:'000'});
 john.fetch({success:function(model){ console.log(model);}});
 ```
 
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/015-model.png?raw=true)
+
+Vous remarquez donc que vous conservez votre id, mais que le serveur vous a "rempli" `firstName` et `lastName`.
+
+Maintenant, pour faire une requête de type POST (et appeler notre "route" `post(new Route("/humans")`), toujours dans la console du navigateur, tapez ceci (et validez) :
+
 ```javascript
 var bob = new Human({firstName:"Bob", lastName:"Morane"});
 bob.save({},{success:function(model){ console.log(model);}});
 ```
 
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/016-model.png?raw=true)
 
 Et là, on n'est pas peu fiers ;)
 
@@ -651,6 +686,13 @@ public class Main {
 - Pensez à ajouter vos fichiers à Git : Par exemple sur le répertoire `lib` ou directement sur `spark-0.9.9.4-SNAPSHOT.jar`, pensez à faire un click droit + Git + Add (faire ça pour tous les jar de `lib`)
 - Puis à tout commiter  : sur la branche projet : click droit + Git + Commit Directory ...
 - Puis on "pousse" à GitHub : sur la branche projet : click droit + Git + Repository + Pull
+
+##La suite ?
+
+- Mettre en oeuvre de persistence
+- Améliorer l'exemple javascript et html
+
+
 
 
 
