@@ -1,0 +1,1 @@
+output = "Hello, ${input}! I'm N3rd.stack:[java] ..."
