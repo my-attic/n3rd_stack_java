@@ -4,6 +4,11 @@ Je me suis refusé à utiliser Maven, car je ne le maîtrise pas, et je voulais 
 
 ##Initialisation du projet
 
+Pour initialiser le projet, choisir : File + New Project, et choisir "Command Line App" :
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/000-new_project.png?raw=true)\
+
+
+
 ###Nouveau Projet
 
 ###Préparatifs de base
@@ -645,7 +650,7 @@ public class Main {
 
 - Pensez à ajouter vos fichiers à Git : Par exemple sur le répertoire `lib` ou directement sur `spark-0.9.9.4-SNAPSHOT.jar`, pensez à faire un click droit + Git + Add (faire ça pour tous les jar de `lib`)
 - Puis à tout commiter  : sur la branche projet : click droit + Git + Commit Directory ...
-- Puis on "pousse" à GitHub :
+- Puis on "pousse" à GitHub : sur la branche projet : click droit + Git + Repository + Pull
 
 
 
