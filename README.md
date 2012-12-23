@@ -1,4 +1,4 @@
-#N3rd.stack(java)
+#N3rd.stack:[java]
 
 Pourquoi ?
 
@@ -13,8 +13,13 @@ Mes inspirations ?
 - Node.js
 - Express.js
 
-Attention le répertoire `doc` n'est pas le mode d'emploi de N3rd.stack(java), mais l'explication de sa "création". Il y aura cependant un chapitre dédié à uniquement son utilisation en l'état.
+Je ne ferais rien de génial, je vais juste me contenter d'assembler des composants.
 
+
+
+>>>Attention le répertoire `doc` n'est pas le mode d'emploi de N3rd.stack(java), mais l'explication de sa "création". Il y aura cependant un chapitre dédié à uniquement son utilisation en l'état.
+
+J'ai fais tout ça avec IntelliJ car il y avait une grosse promo de décembre, mais sinon, avec Netbeans c'est tout à fait faisable
 
 Autres pistes
 
