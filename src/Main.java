@@ -1,4 +1,5 @@
 import static spark.Spark.*;
+
 import spark.*;
 
 import org.k33g.helpers.Assets;
@@ -46,8 +47,7 @@ public class Main {
                     Human model = Json.fromJson(Json.parse(request.body()), Human.class);
                     model.id = java.util.UUID.randomUUID().toString();
                     return Json.toJson(model);
-                }
-                catch(Exception e){
+                } catch (Exception e) {
                     System.out.println(e.getMessage());
                     return Json.toJson(e);
                 }
@@ -59,7 +59,6 @@ public class Main {
         Assets.setHome("index.html");
 
         Assets.serveStatic();
-
 
 
     }
