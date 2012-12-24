@@ -841,6 +841,8 @@ get(new Route("/groovy/fr") {
 
 ![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/018-groovy.png?raw=true)
 
+>>**Le petit truc sympa :** vous pouvez bien sûr modifier vos scripts groovy sans redémarrer N3rd.stack ;)
+
 
 ##Persistence
 
