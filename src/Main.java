@@ -16,9 +16,6 @@ import org.k33g.helpers.Json;
 
 import models.*;
 
-
-
-
 public class Main {
 
     public static void main(String[] args)  {
@@ -118,7 +115,6 @@ public class Main {
         Assets.setPublicPath("public");
         Assets.setHome("index.html");
         Assets.serveStatic();
-
 
     }
 }
