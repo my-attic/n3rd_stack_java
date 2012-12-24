@@ -3,6 +3,7 @@
  */
 
 import static spark.Spark.*;
+
 import spark.*;
 
 import org.k33g.helpers.N3rd;
@@ -16,14 +17,22 @@ import org.k33g.helpers.Json;
 import models.*;
 
 
+
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         setPort(9000);
 
         N3rd.about();
 
         Groovy.setScriptsPath("gscripts");
+
+        try {
+            Groovy.iniScriptEngine();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
         get(new Route("/groovy/us") {
             @Override
@@ -32,8 +41,8 @@ public class Main {
                 try {
 
                     Binding binding = new Binding();
-                    binding.setVariable("input","WORLD");
-                    Groovy.run("hello.groovy",binding);
+                    binding.setVariable("input", "WORLD");
+                    Groovy.run("hello.groovy", binding);
 
                     return binding.getVariable("output").toString();
 

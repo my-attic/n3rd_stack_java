@@ -687,9 +687,182 @@ public class Main {
 - Puis à tout commiter  : sur la branche projet : click droit + Git + Commit Directory ...
 - Puis on "pousse" à GitHub : sur la branche projet : click droit + Git + Repository + Pull
 
+##Support de Groovy
+
+Groovy est un langage qui me plaît énormément, donc j'ai rajouté à N3rd.stack la possibilité d'exécuter des scripts Groovy de manière très très simple pour pouvoir notamment utiliser les **gstrings**. Téléchargez donc [http://dist.groovy.codehaus.org/distributions/groovy-binary-2.0.6.zip](http://dist.groovy.codehaus.org/distributions/groovy-binary-2.0.6.zip), dézippez et copiez dans `lib` le jar `groovy-all-2.0.6-indy.jar`. N'oubliez pas de référencer le jar dans votre projet.
+
+Ensuite dans le package `org.k33g.helpers`, créez une classe `Groovy.java` avec le code ci-dessous :
+
+```java
+package org.k33g.helpers;
+
+import groovy.lang.Binding;
+import groovy.util.GroovyScriptEngine;
+import groovy.util.ResourceException;
+import groovy.util.ScriptException;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Groovy {
+
+    public static String getScriptsPath() {
+        return groovyScriptsPath;
+    }
+
+    public static void setScriptsPath(String groovyScriptsPath) {
+        Groovy.groovyScriptsPath = groovyScriptsPath;
+    }
+
+    private static String groovyScriptsPath;
+
+    private static GroovyScriptEngine gse = null;
+
+    public static void iniScriptEngine() throws IOException {
+        if(gse==null) {
+            String absolutePath = (new File(groovyScriptsPath)).getAbsolutePath();
+            String[] roots = new String[] { absolutePath };
+            gse = new GroovyScriptEngine(roots);
+        }
+    }
+
+    public static void run(String script, Binding binding) throws IOException, ResourceException, ScriptException {
+        iniScriptEngine();
+        gse.run(script, binding);
+    }
+}
+```
+
+###Création de scripts Groovy
+
+Tout d'abord, crééz un répertoire `gscripts` (au même niveau que `public`), dans lequel nous allons créer `hello.groovy` et `salut.groovy`.
+
+**hello.groovy :**
+
+```groovy
+output = "Hello, ${input}! This is N3rd.stack:[java] ..."
+```
+
+**salut.groovy :**
+
+```groovy
+output = """
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Salut, ${input}! C'est la N3rd.stack:[java] ... </h1>
+<script src="../js/vendors/jquery-1.8.3.min.js"></script>
+<script>
+        \$("h1").css("color","green");
+</script>
+</body>
+</html>
+"""
+```
+
+###Utilisation dans Main.java
+
+Il faut tout d'abord importer ceci :
+
+```java
+import org.k33g.helpers.Groovy;
+import groovy.lang.Binding;
+```
+
+Ensuite il faut préciser le répertoire des scripts :
+
+```java
+Groovy.setScriptsPath("gscripts");
+```
+
+Puis finalement initiliser le GroovyScriptEngine au démarrage de N3rd.stack (ce n'est pas obligatoire, car l'exécution du 1er script le fait, mais cela permet de gagner du temps et de rendre l'exécution du 1er script plus rapide) :
+
+```java
+try {
+    Groovy.iniScriptEngine();
+} catch (Exception e) {
+    System.out.println(e.getMessage());
+}
+```
+
+###Création de 2 nouvelles routes
+
+```java
+get(new Route("/groovy/us") {
+    @Override
+    public Object handle(Request request, Response response) {
+        response.type("text/html");
+        try {
+
+            Binding binding = new Binding();
+            binding.setVariable("input", "WORLD");
+            Groovy.run("hello.groovy", binding);
+
+            return binding.getVariable("output").toString();
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+});
+```
+
+>>**Remarque :** `binding.setVariable("input", "WORLD");` signifie que l'on crée une variable `input` avec la valeur `WORLD`, elle sera "lue" par le script Groovy `output = "Hello, ${input}! This is N3rd.stack:[java] ..."`, le résultat est donc mis dans une variable `output` que java peut "lire" avec `binding.getVariable("output")`.
+
+```java
+get(new Route("/groovy/fr") {
+    @Override
+    public Object handle(Request request, Response response) {
+        response.type("text/html");
+        try {
+
+            Binding binding = new Binding();
+            binding.setVariable("input","Tout Le Monde");
+            Groovy.run("salut.groovy",binding);
+
+            return binding.getVariable("output").toString();
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+});
+```
+
+###Testez
+
+[http://localhost:9000/groovy/us](http://localhost:9000/groovy/us)
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/017-groovy.png?raw=true)
+
+[http://localhost:9000/groovy/fr](http://localhost:9000/groovy/fr)
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/018-groovy.png?raw=true)
+
+
+##Persistence
+
+###Le serveur de base de données
+
+Pour le moment j'ai choisi **redis** parce que je peux l'embarquer facilement dans mon projet.
+Pour le moment j'ai une version OSX (cf `/db/osx`), mais je vais aussi fournir pour linux et pour windows, il faut juste que je prenne le temps de "builder" les binaires.
+
+Sinon, vous pouvez aussi le faire vous même :
+
+[http://redis.io/download](http://redis.io/download)
+
+###Le driver java
+
+Nous allons utiliser **jedis** : [https://github.com/xetorthio/jedis/downloads](https://github.com/xetorthio/jedis/downloads). Copiez le jar `jedis-2.1.0.jar` dans le répertoire `lib`. Pensez à le référencer (je radote).
+
+... je vous laisse, il faut que je réfléchisse à la suite
+
+
 ##La suite ?
 
-- Mettre en oeuvre la persistence
+
 - Améliorer l'exemple javascript et html
 
 

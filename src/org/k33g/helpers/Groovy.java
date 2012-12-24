@@ -28,7 +28,7 @@ public class Groovy {
 
     private static GroovyScriptEngine gse = null;
 
-    private static void initGroovyScriptEngine() throws IOException {
+    public static void iniScriptEngine() throws IOException {
         if(gse==null) {
             String absolutePath = (new File(groovyScriptsPath)).getAbsolutePath();
             String[] roots = new String[] { absolutePath };
@@ -37,8 +37,7 @@ public class Groovy {
     }
 
     public static void run(String script, Binding binding) throws IOException, ResourceException, ScriptException {
-
-        initGroovyScriptEngine();
+        iniScriptEngine();
         gse.run(script, binding);
     }
 }
