@@ -1,8 +1,3 @@
-/**
- * User: k33g_org
- * Date: 12/23/12
- * Time: 2:49 PM
- */
 
 yepnope({
     load: {
@@ -12,12 +7,16 @@ yepnope({
         knockout    : 'js/vendors/knockout-2.2.0.js',
         knockback   : 'js/vendors/knockback.min.js',
 
+        core        : 'js/core/n3rd.stack.js',
+
         //skeleton
         base        : 'css/base.css',
         layout      : 'css/layout.css',
         skeleton    : 'css/skeleton.css',
 
-        app                 : 'js/app.js'
+        appcss      : 'css/app.css',
+
+        app         : 'js/app.js'
     },
 
     callback : {
@@ -26,7 +25,7 @@ yepnope({
         }
     },
     complete : function () {
-        app.start();
+
     }
 });
 

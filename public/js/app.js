@@ -1,17 +1,20 @@
-/**
- * User: k33g_org
- * Date: 12/23/12
- * Time: 2:56 PM
- */
+yepnope({
+    load: {
+        human               : 'js/models/human.js',
+        humans              : 'js/collections/humans.js',
+        humansCtrl          : 'js/controllers/humansCtrl.js'
+    },
+    complete : function () {
 
-window.app = {
-    start : function() {
         $(function (){
-
             $("h1").html("N3rd.stack:[java]");
+
+            N3rd.Controllers.HumansCtrl.bindViews();
 
             $("body").css("visibility","visible");  /*<body style="visibility:hidden">*/
 
         }); //Fin jQuery
     }
-}
+});
+
+
