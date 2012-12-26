@@ -12,6 +12,8 @@
     <orderEntry type="library" name="commons-io-2.4" level="project" />
     <orderEntry type="library" name="jackson-all-1.9.11" level="project" />
     <orderEntry type="library" name="groovy-all-2.0.6-indy" level="project" />
+    <orderEntry type="library" name="org.ektorp-1.2.2" level="project" />
+    <orderEntry type="library" name="commons-codec-1.6" level="project" />
   </component>
 </module>
 

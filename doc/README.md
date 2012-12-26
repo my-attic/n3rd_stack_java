@@ -848,22 +848,338 @@ get(new Route("/groovy/fr") {
 
 ###Le serveur de base de données
 
-Pour le moment j'ai choisi **redis** parce que je peux l'embarquer facilement dans mon projet.
-Pour le moment j'ai une version OSX (cf `/db/osx`), mais je vais aussi fournir pour linux et pour windows, il faut juste que je prenne le temps de "builder" les binaires.
+J'étais parti sur du **Redis**, ou du **MongoDB**, mais pour des besoins personnels, j'ai du utiliser du **CouchDB**, donc ce sera du **CouchDB**, que vous récupérerez ici : 
 
-Sinon, vous pouvez aussi le faire vous même :
-
-[http://redis.io/download](http://redis.io/download)
+[http://couchdb.apache.org/](http://couchdb.apache.org/)
 
 ###Le driver java
 
-Nous allons utiliser **jedis** : [https://github.com/xetorthio/jedis/downloads](https://github.com/xetorthio/jedis/downloads). Copiez le jar `jedis-2.1.0.jar` dans le répertoire `lib`. Pensez à le référencer (je radote).
+Nous allons utiliser **Ektorp** : [https://github.com/helun/Ektorp/downloads](https://github.com/helun/Ektorp/downloads). Copiez le jar `org.ektorp-1.2.2.jar` dans le répertoire `lib`. Pensez à le référencer (je radote). Vous aurez aussi besoin des dépendances de **Apache HttpComponents**, prenez la partie "HttpClient" [http://mirrors.ircam.fr/pub/apache//httpcomponents/httpclient/binary/httpcomponents-client-4.2.2-bin.zip](http://mirrors.ircam.fr/pub/apache//httpcomponents/httpclient/binary/httpcomponents-client-4.2.2-bin.zip).
 
-... je vous laisse, il faut que je réfléchisse à la suite
+###Nous avons besoin d'initialiser la base
+
+Dans le package `org.k33g.helpers`, créez une classe `CouchDB` avec le code ci-dessous :
+
+```java
+package org.k33g.helpers;
+
+import org.ektorp.CouchDbConnector;
+import org.ektorp.CouchDbInstance;
+import org.ektorp.http.HttpClient;
+import org.ektorp.http.StdHttpClient;
+import org.ektorp.impl.StdCouchDbConnector;
+import org.ektorp.impl.StdCouchDbInstance;
+
+import java.net.MalformedURLException;
+
+public class CouchDB {
+
+    public static CouchDbConnector getDb(String dbName, String url) {
+        HttpClient httpClient = null;
+        try {
+            httpClient = new StdHttpClient.Builder()
+                    .url(url)
+                    .build();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        CouchDbInstance dbInstance = new StdCouchDbInstance(httpClient);
+        CouchDbConnector db = new StdCouchDbConnector(dbName, dbInstance);
+
+        db.createDatabaseIfNotExists();
+        return db;
+    }
+}
+```
+
+Pour l'initialiser, nous utiliserons le code suivant (ou quelque chose dans ce style) `CouchDbConnector db = CouchDB.getDb("nom_de_ma_base","http://localhost:5984");` mais nous y reviendrons plus tard.
+
+###Modifions notre modèle Human
+
+Modifiez le code source de la classe `Human` (dans `models`) pour le rendre "compatible" avec **Ektorp** :
+
+```java
+package models;
+
+import org.codehaus.jackson.annotate.*;
+
+public class Human {
+
+    @JsonProperty("_id")
+    public String id;
+
+    @JsonProperty("_rev")
+    public String revision;    
+    
+    public String firstName;
+    public String lastName;
 
 
-##La suite ?
+    public Human() {
+    }
 
+    public Human(String firstName, String lastName) {
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" + "firstName=" + firstName +
+                ", lastName=" + lastName + ", id=" + id + '}';
+    }
+}
+```
+
+###Nous aurons besoin d'un repository
+
+Il nous faudra un objet "repository" pour gérer les opérations de CRUD sur `Human`. Créez un package `repositories` avec une classe `HumanRepository` qui contiendra la code suivant :
+
+```java
+package repositories;
+
+import models.Human;
+import org.ektorp.CouchDbConnector;
+import org.ektorp.support.CouchDbRepositorySupport;
+
+public class HumanRepository extends CouchDbRepositorySupport<Human> {
+    public HumanRepository(CouchDbConnector db) {
+        super(Human.class, db);
+    }
+}
+```
+
+##Il est temps de d'écrire des routes qui servent à quelque chose
+
+Nous allons écrire les routes permettant de lire et écrire dans la base. Mais tout d'abord initialisons notre base dans la classe `Main` :
+
+Ajoutez les imports nécessaires :
+
+```java
+import org.ektorp.CouchDbConnector;
+import repositories.HumanRepository;
+```
+
+Puis le bout de code pour initialiser la base  (ou "ouvrir" la base si elle existe déjà) :
+
+```java
+CouchDbConnector db = CouchDB.getDb("humansdb","http://localhost:5984");
+HumanRepository humanRepository = new HumanRepository(db);
+```
+>>**PS :** le serveur CouchDB doit bien sûr être lancé.
+
+###"Route de création"
+
+Modifions la route `post(new Route("/humans")` existante, comme ceci (verbe REST : POST) :
+
+```java
+post(new Route("/humans") {
+    @Override
+    public Object handle(Request request, Response response) {
+        response.type("application/json");
+        try {
+            Human model = Json.fromJson(Json.parse(request.body()), Human.class);
+
+            humanRepository.add(model);
+
+            return Json.toJson(model);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return Json.toJson(e);
+        }
+    }
+});
+```
+
+###Testons la création
+
+Lancez le serveur **CouchDB**
+
+Démarrez l'application web : [http://localhost:9000/](http://localhost:9000/)
+
+Puis ouvrez la console du navigateur et saisissez ce code :
+
+```javascript
+var Human = Backbone.Model.extend({urlRoot:'/humans', idAttribute: '_id'});
+var bob = new Human({firstName:"Bob", lastName:"Morane"});
+bob.save({},{success:function(model){ console.log(model);}});
+```
+
+Vous pouvez vérifier que vous obtenez en retour un id (donc le modèle a bien été créé en base) :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/019-couchdb.png?raw=true)
+
+Et nous pouvons tout de suite le vérifier en allant faire un tour dans l'administration de **CouchDB** (pour y accéder [http://127.0.0.1:5984/_utils/index.html](http://127.0.0.1:5984/_utils/index.html)):
+
+>>**Remarque importante :** Notez bien `idAttribute: '_id'` dans la définition du modèle, cela permet de dire à **Backbone** que `ìd` n'est plus `id` mais `_id` et ainsi "communiquer" plus facilement avec **CouchDB** qui affecte un id à ses documents(modèles) ayant pour nom `_id`. Et tout cela sans être obligé de re-écrire une quelconque mécanique. Pour de meilleures explications : [http://backbonejs.org/#Model-idAttribute](http://backbonejs.org/#Model-idAttribute) *PS: ça marche aussi pour MongoDB.*
+
+On note que la base "humansdb" a bien été créée et qu'elle contient un enregistrement :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/020-couchdb.png?raw=true)
+
+Si on sélectionne la base, on obtient la liste des enregistrements (enfin de l'enregistrement) :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/021-couchdb.png?raw=true)
+
+Si on sélectionne l'enregistrement, on obtient le détail de celui-ci :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/022-couchdb.png?raw=true)
+
+Ajoutons donc encore quelques "humains" (via la console du navigateur) avant de passer à la suite :
+
+```javascript
+var john = new Human({firstName:"John", lastName:"Doe"});
+john.save({},{success:function(model){ console.log(model);}});
+var jane = new Human({firstName:"Jane", lastName:"Doe"});
+jane.save({},{success:function(model){ console.log(model);}});
+```
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/023-couchdb.png?raw=true)
+
+Vous pouvez vérifier qu'ils ont bien été "persistés" en base :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/024-couchdb.png?raw=true)
+
+###"Route d'interrogation"
+
+Nous allons créer la "route" java qui va nous permettre de "récupérer" tous les humains de la base. Donc dans `Main.java` ajoutez cette route (verbe REST : GET) :
+
+```java
+get(new Route("/humans") {
+    @Override
+    public Object handle(Request request, Response response) {
+        List<Human> humans = humanRepository.getAll();
+
+        response.type("application/json");
+        return Json.toJson(humans);
+    }
+});
+```
+
+Sauvegardez, compilez, lancez et testez avec le code suivant dans la console du navigateur :
+
+```javascript
+var Human = Backbone.Model.extend({urlRoot:'/humans', idAttribute: '_id'});
+var Humans = Backbone.Collection.extend({url:'/humans'});
+var humans = new Humans();
+humans.fetch({success:function(models){ 
+    models.forEach(function(model){ console.log(model.get("firstName"), model.get("lastName")); });    
+}});
+```
+
+Vous obtiendrez ceci :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/025-couchdb.png?raw=true)
+
+
+Maintenant, nosu voulons "récupérer" un humain par son id. Modifiez donc la route `get(new Route("/humans/:id")` existante comme ceci (verbe REST : GET) : 
+
+```java
+get(new Route("/humans/:id") {
+    @Override
+    public Object handle(Request request, Response response) {
+        String id = request.params(":id");
+        Human model = humanRepository.get(id);
+        response.type("application/json");
+        return Json.toJson(model);
+    }
+});
+```
+
+Puis vérifiez comme précédement (récupérez l'id d'un des modèles) dans la console du navigateur :
+
+```javascript
+var Human = Backbone.Model.extend({urlRoot:'/humans', idAttribute: '_id'});
+var john = new Human({_id:"11e483a3c583425cbc73e6b08b00893d"});
+john.fetch({success:function(model){ console.log(model.get("firstName"), model.get("lastName")); }});
+```
+
+Vous obtiendrez bien votre modèle :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/026-couchdb.png?raw=true)
+
+###"Route de mise à jour"
+
+Il faut maintenant créer une route de "modification" (verbe REST : PUT) :
+
+```java
+put(new Route("/humans/:id") {
+    @Override
+    public Object handle(Request request, Response response) {
+        response.type("application/json");
+        try {
+            Human model = Json.fromJson(Json.parse(request.body()), Human.class);
+            //String id = request.params(":id");
+            humanRepository.update(model);
+
+            return Json.toJson(model);
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+            return Json.toJson(e);
+        }
+    }
+});
+```
+
+Vous sauvegardez, compilez, relancez et re-testez comme ceci :
+
+```javascript
+var Human = Backbone.Model.extend({urlRoot:'/humans', idAttribute: '_id'});
+var john = new Human({_id:"11e483a3c583425cbc73e6b08b00893d"});
+john.fetch({success:function(model){ console.log(model.get("firstName"), model.get("lastName")); }});
+john.set({firstName:"JOHN", lastName:"DOE"})
+john.save({},{success:function(model){ console.log(model);}});
+```
+
+Et vous obtenez bien ceci :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/027-couchdb.png?raw=true)
+
+Et vous pouvez vérifier en bade que les modifications ont bien été prises en compte :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/028-couchdb.png?raw=true)
+
+###"Route de suppression"
+
+Une dernière pour la route (je sais c'est lourd) : la suppression (verbe REST : DELETE) :
+
+```java
+delete(new Route("/humans/:id") {
+    @Override
+    public Object handle(Request request, Response response) {
+        String id = request.params(":id");
+        Human model = humanRepository.get(id);
+        humanRepository.remove(model);
+
+        response.type("application/json");
+        return Json.toJson(model);
+    }
+});
+```
+
+On teste : 
+
+```javascript
+var Human = Backbone.Model.extend({urlRoot:'/humans', idAttribute: '_id'});
+var john = new Human({_id:"11e483a3c583425cbc73e6b08b00893d"});
+john.fetch({success:function(model){ console.log(model.get("firstName"), model.get("lastName")); }});
+john.destroy({success:function(model){ console.log(model);}});
+```
+
+Vous obtenez :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/029-couchdb.png?raw=true)
+
+Vous vérifiez côté **CouchDB**
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/030-couchdb.png?raw=true)
+
+Voilà voilà. Vous avez déjà quelque chose de sympa qui mérite un peu de refactoring, mais vous puvez déjà commencer à vous amuser.
+
+##TODO
 
 - Améliorer l'exemple javascript et html
 
