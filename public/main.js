@@ -14,8 +14,6 @@ yepnope({
         layout      : 'css/layout.css',
         skeleton    : 'css/skeleton.css',
 
-        appcss      : 'css/app.css',
-
         app         : 'js/app.js'
     },
 
@@ -25,7 +23,7 @@ yepnope({
         }
     },
     complete : function () {
-
+        //foo
     }
 });
 

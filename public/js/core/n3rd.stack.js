@@ -11,12 +11,7 @@ var N3rd = (function () {
     n3rd.Kind = function() {
         this.initialize && this.initialize.apply(this, arguments);
     };
-    n3rd.extend = Backbone.Model.extend;
-
-    n3rd.Controller = function() {
-        this.initialize && this.initialize.apply(this, arguments);
-    };
-    n3rd.Controller.extend = Backbone.Model.extend;
+    n3rd.Kind.extend = Backbone.Model.extend;
 
     return n3rd;
 }());

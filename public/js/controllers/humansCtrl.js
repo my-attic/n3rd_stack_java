@@ -1,4 +1,4 @@
-N3rd.Controllers.HumansCtrl = N3rd.Controller.extend({
+N3rd.Controllers.HumansCtrl = N3rd.Kind.extend({
 
 },{//static
     model : new N3rd.Models.Human({firstName:"John", lastName:"Doe"}),

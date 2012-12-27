@@ -1,6 +1,10 @@
 #N3rd.stack:[java]
 
-Je me suis refusé à utiliser Maven, car je ne le maîtrise pas, et je voulais faire quelque chose de plus "handmade" ou "from scratch"
+Je me suis refusé à utiliser Maven, car je ne le maîtrise pas, et je voulais faire quelque chose de plus "handmade" ou "from scratch". 
+
+>>*N3rd.stack:[java] se veut être "framework agnostic" (un peu comme Backbone). Elle apporte une base, vous pouvez ensuite utiliser ce que vous voulez pour la base de données ou la partie javascript.*
+
+>>*En ce qui me concerne j'utiliserais CouchDB pour la partie data, et une base de Backbone+Knockout+KnockBack pour la partie javascript*
 
 ##Initialisation du projet
 
@@ -1179,10 +1183,374 @@ Vous vérifiez côté **CouchDB**
 
 Voilà voilà. Vous avez déjà quelque chose de sympa qui mérite un peu de refactoring, mais vous puvez déjà commencer à vous amuser.
 
-##TODO
+##Partie javascript
 
-- Améliorer l'exemple javascript et html
+Nous avions préparé le terrain, nous allons maintenant organiser nos fichiers et coder le nécessaire pour afficher nos données dans notre page web, et permettre aussi d'ajouter de nouveaux éléments.
 
+###Core
+
+Dans `public/js`, il faut créer une répertoire `core` dans lequel nous allons "coller" un peu de code "fédérateur". Créez dans `core` un fichier `n3rd.stack.js` avec le code suivant :
+
+```javascript
+var N3rd = (function () {
+    var n3rd = {};
+
+    n3rd.Models = {};
+    n3rd.Collections = {};
+    n3rd.Views = {};
+    n3rd.Controllers = {};
+    n3rd.Router = {};
+
+    n3rd.Kind = function() {
+        this.initialize && this.initialize.apply(this, arguments);
+    };
+    n3rd.Kind.extend = Backbone.Model.extend;
+
+    return n3rd;
+}());
+```
+
+Ce sera le module de base de notre application. La partie ci-dessous :
+
+```javascript
+    var n3rd = {};
+
+    n3rd.Models = {};
+    n3rd.Collections = {};
+    n3rd.Views = {};
+    n3rd.Controllers = {};
+    n3rd.Router = {};
+```
+
+Nous permettra d'écrire des choses comme celle-ci :
+
+```javascript
+N3rd.Models.Human = Backbone.Model.extend({});
+```
+
+l'autre partie, nous permettra d'utiliser le modèle objet de **Backbone** 
+
+```javascript
+    n3rd.Kind = function() {
+        this.initialize && this.initialize.apply(this, arguments);
+    };
+    n3rd.Kind.extend = Backbone.Model.extend;
+```
+
+Et nous pourront écrire des choses comme celle-là :
+
+```javascript
+N3rd.Controllers.HumansCtrl = N3rd.Kind.extend({})
+```
+
+et de définir nos propres composants (classes/kind).
+
+###Modèles
+
+Dans `public/js`, il faut créer une répertoire `models`. Créez dans `models` un fichier `human.js` avec le code suivant :
+
+```javascript
+var N3rd = (function (n3rd) {
+
+    n3rd.Models.Human = Backbone.Model.extend({
+        urlRoot :"/humans",
+        idAttribute: '_id'
+    });
+
+    return n3rd;
+}(N3rd));
+```
+
+>>**Rappel :** `idAttribute: '_id'` est une spécificité liée à **CouchDB** (et **MongoDB**).
+
+###Collections
+
+Dans `public/js`, il faut créer une répertoire `collections`. Créez dans `collections` un fichier `humans.js` avec le code suivant :
+
+```javascript
+var N3rd = (function (n3rd) {
+
+    n3rd.Collections.Humans = Backbone.Collection.extend({
+        url :"/humans",
+        model : N3rd.Models.Human
+    });
+
+    return n3rd;
+}(N3rd));
+```
+
+Nous avons donc toute la mécanique nécessaire en ce qui concerne la partie données. Maintenant, il va falloir afficher ces données.
+
+###index.html - 1ère partie
+
+Définissons l'ihm de notre Webapp :
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>N3rd.stack:[java]</title>
+</head>
+
+<body style="visibility:hidden">
+    <h1>mon titre</h1>
+    <div id="formHumanView">
+        <form>
+            <input data-bind="value: firstName"/><span> </span>
+            <input data-bind="value: lastName"/>
+        </form>
+    </div>
+
+    <div id="messageHumanView">
+        <span data-bind="text: firstName"></span>
+        <span data-bind="text: lastName"></span>
+    </div>
+
+    <div id="listHumansView">
+        <table>
+            <thead>
+            <tr><th>id</th><th>FirstName</th><th>LastName</th><th>Action</th></tr>
+            </thead>
+            <tbody data-bind="foreach: humans">
+            <tr>
+                <td><a data-bind="text:_id, attr:{href:_id}"></a></td>
+                <td data-bind="text: firstName"></td>
+                <td data-bind="text: lastName"></td>
+                <td><a data-bind="attr:{href:_id}">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/vendors/yepnope.1.5.4-min.js"></script>
+    <script src="main.js"></script>
+
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        table, th, td, tr {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #000000;
+        }        
+    </style>
+</body>
+</html>
+```
+
+- le 1er DIV `<div id="formHumanView">` permettra de saisir des données (pour plus tard les insérer en base).
+- le 2ème DIV `<div id="messageHumanView">` affichera la même chose que le formulaire de saisie, et sera modifié si les données de saisie sont modifiées
+- le 3ème DIV `<div id="listHumansView">` affichera la liste des humains
+
+>>**Remarquez** les attributs de type `data-bind="value: field_name"`, `data-bind="text: field_name"`, `data-bind="foreach: collection_name"`. C'est ce qui permmettra à **Knockout** et **Knockback** de faire le lien entre le DOM et les modèles et collections **Backbone**.
+
+###Le contrôleur pour gérer tout ça
+
+Dans `public/js`, il faut créer une répertoire `controllers`. Créez dans `controllers` un fichier `humansCtrl.js` avec le code suivant :
+
+```javascript
+N3rd.Controllers.HumansCtrl = N3rd.Kind.extend({
+
+},{//static
+    model : new N3rd.Models.Human({firstName:"John", lastName:"Doe"}),
+    collection : new N3rd.Collections.Humans(),
+
+    bindViews:function(){
+        var self = this;
+
+        N3rd.Controllers.HumansCtrl.collection.fetch({success:function(){
+            ko.applyBindings({humans:kb.collectionObservable(N3rd.Controllers.HumansCtrl.collection)}, $("#listHumansView")[0]);
+            ko.applyBindings(kb.viewModel(N3rd.Controllers.HumansCtrl.model), $("#formHumanView")[0]);
+            ko.applyBindings(kb.viewModel(N3rd.Controllers.HumansCtrl.model), $("#messageHumanView")[0]);
+        }});
+
+    }
+});
+```  
+
+J'ai pris le parti de faire un contrôleur statique (grâce au modèle objet de **Backbone**).
+
+###Lions tout ceci
+
+Modifiez le fichier `public/main.js` afin de charger les bonnes dépendances :
+
+```javascript
+yepnope({
+    load: {
+        jquery      : 'js/vendors/jquery-1.8.3.min.js',
+        underscore  : 'js/vendors/underscore-min.js',
+        backbone    : 'js/vendors/backbone-min.js',
+        knockout    : 'js/vendors/knockout-2.2.0.js',
+        knockback   : 'js/vendors/knockback.min.js',
+
+        core        : 'js/core/n3rd.stack.js',
+
+        //skeleton
+        base        : 'css/base.css',
+        layout      : 'css/layout.css',
+        skeleton    : 'css/skeleton.css',
+
+        app         : 'js/app.js'
+    },
+
+    callback : {
+        "app" : function () {
+            console.log("app.js loaded ...");
+        }
+    },
+    complete : function () {
+        //foo
+    }
+});
+```
+
+Puis créez le code applicatif dans `public/js/app.js` :
+
+```javascript
+yepnope({
+    load: {
+        human               : 'js/models/human.js',
+        humans              : 'js/collections/humans.js',
+        humansCtrl          : 'js/controllers/humansCtrl.js'
+    },
+    complete : function () {
+
+        $(function (){
+            $("h1").html("N3rd.stack:[java]");
+
+            N3rd.Controllers.HumansCtrl.bindViews();
+
+            $("body").css("visibility","visible");  /*<body style="visibility:hidden">*/
+
+        }); //Fin jQuery
+    }
+});
+```
+
+Dans le 2ème "bout de code", je charge mes modèles, collections, contrôleurs, puis je "bind" mes data au DOM de ma page. Si ce n'est pas déjà fait, relancez l'application et ouvrez la page dans le navigateur : [http://localhost:9000/](http://localhost:9000/).
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/031-js.png?raw=true)
+
+Vous pouvez vérifier que si vous changez les données dans les zones de saisie, l'affichage en dessous se met à jour quand vous perdez le focus de la zone de saisie :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/032-js.png?raw=true)
+
+Maintenant, nous souhaitons que lorsque l'on clique sur le lien de gauche (qui affiche l'id du modèle), cela aille chercher les infos du modèle côté serveur, que lorsque l'on clique sur le lien "Delete", cela supprime le modèle du serveur, et que l'on puisse ajouter un modèle à partir des zones de saisie.
+
+###Modifions notre contrôleur
+
+Nous allons ajouter 3 méthodes (statiques) au contrôleur :
+
+- `addHuman`
+- `select`
+- `selectAndDelete`
+
+de cette manière :
+
+```javascript
+N3rd.Controllers.HumansCtrl = N3rd.Kind.extend({
+
+},{//static
+    model : new N3rd.Models.Human({firstName:"John", lastName:"Doe"}),
+    collection : new N3rd.Collections.Humans(),
+
+    bindViews:function(){
+        var self = this;
+
+        N3rd.Controllers.HumansCtrl.collection.fetch({success:function(){
+            ko.applyBindings({humans:kb.collectionObservable(N3rd.Controllers.HumansCtrl.collection)}, $("#listHumansView")[0]);
+            ko.applyBindings(kb.viewModel(N3rd.Controllers.HumansCtrl.model), $("#formHumanView")[0]);
+            ko.applyBindings(kb.viewModel(N3rd.Controllers.HumansCtrl.model), $("#messageHumanView")[0]);
+        }});
+
+    },
+    addHuman : function() {
+        var tmpModel = N3rd.Controllers.HumansCtrl.model.clone();
+        tmpModel.save({},{
+            success:function(){
+                N3rd.Controllers.HumansCtrl.collection.fetch({
+                    success: function(data){/**/},
+                    error: function(err){throw err;}
+                });
+            },
+            error: function(err){throw err;}
+        });
+    },
+    //called when link is clicked
+    select : function(model) {
+        var tmpModel = new N3rd.Models.Human();
+        tmpModel.set("_id", model._id());
+        tmpModel.fetch({ //GET
+            success:function(){console.log(tmpModel);},
+            error:function(err){throw err;}
+        });
+    },
+    //called when delete link is clicked
+    selectAndDelete : function(model) {
+        var tmpModel = new N3rd.Models.Human();
+        tmpModel.set("_id", model._id());
+
+        tmpModel.destroy({ //DELETE
+            success:function(){
+                N3rd.Controllers.HumansCtrl.collection.fetch({
+                    success: function(data){
+                        console.log("Collections fetched after delete : ", data);
+                    },
+                    error: function(err){throw err;}
+                });
+            },
+            error:function(err){throw err;}
+        });
+    }
+});
+```
+
+###Lions les méthodes du contrôleur au DOM
+
+Modifiez le code html de cette façon :
+
+```html
+<div id="formHumanView">
+    <form>
+        <input data-bind="value: firstName"/><span> </span>
+        <input data-bind="value: lastName"/>
+        <button data-bind="click:N3rd.Controllers.HumansCtrl.addHuman">ADD ME</button>
+    </form>
+</div>
+```
+
+Nous avons ajouté un bouton et avons affecté la méthode du contrôleur `N3rd.Controllers.HumansCtrl.addHuman` à l'évènement `click` du bouton.
+
+```html
+<div id="listHumansView">
+    <table>
+        <thead>
+        <tr><th>id</th><th>FirstName</th><th>LastName</th><th>Action</th></tr>
+        </thead>
+        <tbody data-bind="foreach: humans">
+        <tr>
+            <td><a data-bind="click:N3rd.Controllers.HumansCtrl.select, text:_id, attr:{href:_id}"></a></td>
+            <td data-bind="text: firstName"></td>
+            <td data-bind="text: lastName"></td>
+            <td><a data-bind="click:N3rd.Controllers.HumansCtrl.selectAndDelete, attr:{href:_id}">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+```
+
+Nous avons affecté la méthode du contrôleur `N3rd.Controllers.HumansCtrl.select` à l'évènement `click` du 1er lien et la méthode du contrôleur `N3rd.Controllers.HumansCtrl.selectAndDelete` à l'évènement `click` du 2ème lien.
+
+Sauvegardez et rafraichissez votre page (oui pas besoin de recompiler pour la partie statique) et testez :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/033-js.png?raw=true)
+
+Si vous ouvrez la console du navigateur et que vous cliquez sur le lien qui affiche l'id du modèle, vous pouvez vérifier qu'il y a bien un traitement :
+
+![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/034-js.png?raw=true)
 
 
 
