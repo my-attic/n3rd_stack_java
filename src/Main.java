@@ -77,6 +77,29 @@ public class Main {
             }
         });
 
+        /* get All Humans */
+        get(new Route("/groovy/humans") {
+            @Override
+            public Object handle(Request request, Response response) {
+                List<Human> humans = humanRepository.getAll();
+
+                try {
+                    response.type("text/html");
+                    Binding binding = new Binding();
+                    binding.setVariable("input",humans);
+                    Groovy.run("humans.groovy",binding);
+                    String html = binding.getVariable("output").toString();
+                    return html;
+
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                    return null;
+                }
+
+
+            }
+        });
+
         get(new Route("/about") {
             @Override
             public Object handle(Request request, Response response) {
