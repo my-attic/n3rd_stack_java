@@ -24,9 +24,8 @@ Alors comme l'indique son nom, c'est du java, avec (entre autre chose) les compo
 
 Il y a aussi du javascript avec :
 
-- **Backbone** et les dépendances associées (jQuery, Underscore), essentiellement pour ses modèles, collections, "moyens de synchronisation" avec le serveur et enfin son modèle objet.
-- **YepNope** comme "script loader"
-- **Knockout** et **Knockback**, le 1er pour son binding html "bi-directionnel" "à la **Angular**", mais en mieux (et/ou plus simple) (ça n'engage que moi), le 2ème permettant d'intégrer les modèles et collections de **Backbone** dans **Knockout**
+- **AngularJS**
+- ... et c'est tout ;)
 
 >>**N3rd.stack:[java] est dédiée Webapp de type "Single Page Application**, c'est pour cela que je n'inclus pas de moteur de template (pour le moment), mais vous verrez que cela peut se faire facilement.
 
