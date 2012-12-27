@@ -1552,6 +1552,9 @@ Si vous ouvrez la console du navigateur et que vous cliquez sur le lien qui affi
 
 ![n3rd](https://github.com/k33g/n3rd_stack_java/blob/master/doc/rsrc/034-js.png?raw=true)
 
+Et voilà. Votre stack est terminée (ok, il faut le dire vite, mais vous avez de quoi continuer par vos propre moyens).
+
+
 
 
 
