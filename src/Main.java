@@ -166,7 +166,7 @@ public class Main {
         });
 
         //SERVE STATIC FILES
-        Assets.setPublicPath("public");
+        Assets.setPublicPath("app");
         Assets.setHome("index.html");
         Assets.serveStatic();
 

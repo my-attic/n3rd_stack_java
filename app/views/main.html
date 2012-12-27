@@ -1,0 +1,29 @@
+<h1>mon titre</h1>
+<div id="formHumanView">
+    <form>
+        <input ng-model="firstName"/><span> </span>
+        <input ng-model="lastName"/>
+        <button ng-click="addHuman(firstName, lastName)">ADD ME</button>
+    </form>
+</div>
+
+<div id="messageHumanView">
+    <span ng-bind="selectedHuman.firstName"></span>
+    <span ng-bind="selectedHuman.lastName"></span>
+</div>
+
+<div id="listHumansView">
+    <table>
+        <thead>
+        <tr><th>id</th><th>FirstName</th><th>LastName</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="human in humans">
+            <td><a ng-click="select(human)">{{human._id}}</a></td>
+            <td ng-bind="human.firstName"></td>
+            <td ng-bind="human.lastName"></td>
+            <td><a ng-click="selectAndDelete(human)">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
