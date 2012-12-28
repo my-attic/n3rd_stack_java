@@ -13,7 +13,7 @@ define([
             init: function () {
                 $(function (){
                     $("h1").html("N3rd.stack:[java]");
-                    $("h2").html("With TwitterBootstrap & Require.js");
+                    $("h3").html("With TwitterBootstrap & Require.js");
 
                     window.HumansCtrl = HumansCtrl;
                     HumansCtrl.bindViews();

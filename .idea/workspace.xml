@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a97fc95-3e47-497d-a728-e321819c3523" name="Default" comment="js">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/2TEST.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/text/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/css/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/text/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/backbone/backbone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/css/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/humans.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/jquery/dist/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/knockback/knockback.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/knockout/knockout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/backbone/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/css/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/jquery/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/jquery/src/sizzle/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/jquery/src/sizzle/speed/benchmark.js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/jquery/test/qunit/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/knockback/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/knockout/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/text/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/underscore/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/require.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/text/text.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/js/vendor/underscore/underscore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/k33g/helpers/Assets.java" afterPath="$PROJECT_DIR$/src/org/k33g/helpers/Assets.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    <list default="true" id="9a97fc95-3e47-497d-a728-e321819c3523" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.n3rd/js/app.js" afterPath="$PROJECT_DIR$/public.n3rd/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="n3rd.stack.java.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/01-CREATION.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356282847287" ignored="false" />
-    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356732295474" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356732312039" ignored="false" />
     <file path="/README.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356732248247" ignored="false" />
     <file path="/main.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356561977051" ignored="false" />
     <file path="/app.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356702582879" ignored="false" />
@@ -130,10 +105,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="salut.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gscripts/salut.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="53" selection-start="4613" selection-end="4613" vertical-scroll-proportion="0.73309606">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gscripts/hello.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Groovy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/k33g/helpers/Groovy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,61 +135,7 @@
       <file leaf-file-name="humans.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gscripts/templates/humans.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="humans.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/js/collections/humans.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="18" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2TEST.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/2TEST.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="8" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="99" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Assets.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/k33g/helpers/Assets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="18" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0">
+            <state line="10" column="23" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,10 +153,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="N3rd.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/k33g/helpers/N3rd.java">
+      <file leaf-file-name="CouchDB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/k33g/helpers/CouchDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="0.0">
+            <state line="21" column="25" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="humansCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="humans.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/humans.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="28" selection-start="659" selection-end="659" vertical-scroll-proportion="0.57391304">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -241,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/controllers/Application.java" />
         <option value="$PROJECT_DIR$/src/controllers/Humans.java" />
         <option value="$PROJECT_DIR$/public.n3rd/.bowerrc" />
         <option value="$PROJECT_DIR$/public.n3rd/package.json" />
@@ -250,14 +226,22 @@
         <option value="$PROJECT_DIR$/public.n3rd/js/collections/humans.js" />
         <option value="$PROJECT_DIR$/public.n3rd/js/models/human.js" />
         <option value="$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js" />
-        <option value="$PROJECT_DIR$/public.n3rd/js/app.js" />
         <option value="$PROJECT_DIR$/public.n3rd/index.html" />
         <option value="$PROJECT_DIR$/public.n3rd/README.md" />
         <option value="$PROJECT_DIR$/public.n3rd/2TEST.md" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/org/k33g/helpers/Assets.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/public.n3rd/js/app.js" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -353,6 +337,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public.n3rd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -393,7 +395,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,11 +417,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="underscore" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -736,7 +734,11 @@
       <created>1356703370330</created>
       <updated>1356703370331</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="js">
+      <created>1356732316164</created>
+      <updated>1356732316164</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -755,7 +757,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980545" sideWeight="0.5511182" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980545" sideWeight="0.5511182" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44888178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -834,59 +836,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public.simple/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="230" selection-end="469" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="21" selection-start="2197" selection-end="2207" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.simple/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="0" selection-end="1557" vertical-scroll-proportion="0.41666666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/humans.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gscripts/templates/humans.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/css/bootstrap-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/js/collections/humans.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="18" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
@@ -908,16 +857,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/org/k33g/helpers/Assets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="99" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+        <state line="73" column="18" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/k33g/helpers/Assets.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="18" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0">
+        <state line="71" column="53" selection-start="4613" selection-end="4613" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="25" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/salut.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/hello.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/k33g/helpers/Groovy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/templates/humans.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -932,9 +916,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/org/k33g/helpers/CouchDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="53" selection-start="4613" selection-end="4613" vertical-scroll-proportion="0.73309606">
+        <state line="21" column="25" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/humans.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="28" selection-start="659" selection-end="659" vertical-scroll-proportion="0.57391304">
           <folding />
         </state>
       </provider>
