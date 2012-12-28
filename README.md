@@ -63,3 +63,13 @@ Il y a aussi du javascript avec :
 >>**Si vous downloadez le projet ici : [https://github.com/k33g/n3rd_stack_java/archive/master.zip](https://github.com/k33g/n3rd_stack_java/archive/master.zip) vous pouvez très bien l'ouvrir avec la version Community d'IntelliJ.**
 
 >>*Il y aura peut-être N3rd.stack:[Node]*
+
+##Utilisation
+
+- Downloader [https://github.com/k33g/n3rd_stack_java/archive/master.zip](https://github.com/k33g/n3rd_stack_java/archive/master.zip)
+- Deziper
+- Dans le répertoire, lancer la commande `mvn dependency:copy-dependencies` (1 fois si nécessaire)
+- Dans le répertoire, lancer la commande `mvn compile`
+- Dans le répertoire, lancer la commande `mvn exec:java -Dexec.maClass="Main"`
+
+

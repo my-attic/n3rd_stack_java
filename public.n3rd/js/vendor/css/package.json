@@ -1,0 +1,31 @@
+{
+  "name": "css",
+  "version": "0.1.1",
+  "description": "Plugin for Require.js to add modular stylesheets as dependencies.",
+  "categories": [
+    "Loader plugins"
+  ],
+  "main": "css.js",
+  "github": "https://github.com/justin-winslow/css",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/justin-winslow/css.git"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    },
+    {
+      "type": "BSD New",
+      "url": "http://opensource.org/licenses/BSD-3-Clause"
+    }
+  ],
+  "jam": {
+    "dependencies": {
+      "text": null
+    }
+  }
+}

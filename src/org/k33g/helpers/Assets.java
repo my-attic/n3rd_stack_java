@@ -59,8 +59,9 @@ public class Assets {
                         .getFileNameMap()
                         .getContentTypeFor(file.getName());
 
-                //System.out.println(absolutePath + pathInfo);
-                //System.out.println(mime);
+                /*System.out.println(absolutePath + pathInfo);
+                System.out.println(mime);
+                System.out.println(file.getName());*/
 
                 if(mime==null && file.getName().contains(".css")){
                     mime = "text/css";
