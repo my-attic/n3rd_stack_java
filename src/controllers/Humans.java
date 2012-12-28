@@ -9,10 +9,6 @@ import spark.Response;
 
 import java.util.List;
 
-
-
-
-
 public class Humans {
     public static JsonNode getAll(Request request, Response response) {
         List<Human> humans = Repositories.humanRepository.getAll();
