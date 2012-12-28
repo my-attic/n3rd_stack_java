@@ -100,7 +100,8 @@ public class Main {
         });
 
         //SERVE STATIC FILES
-        Assets.setPublicPath("public.n3rd");
+        Assets.setPublicPath("app");
+        //Assets.setPublicPath("public.n3rd");
         //Assets.setPublicPath("public.simple");
         Assets.setHome("index.html");
         Assets.serveStatic();
