@@ -1,32 +1,21 @@
+
 /*
     N3rd.stack:[java]
  */
 
 import static spark.Spark.*;
-
-import org.ektorp.CouchDbConnector;
-
-import org.k33g.helpers.*;
-import repositories.HumanRepository;
 import spark.*;
-
-import groovy.lang.Binding;
-
-import models.*;
-
-import java.util.List;
+import org.k33g.helpers.*;
 
 
 public class Main {
 
     public static void main(String[] args)  {
         setPort(9000);
-
         N3rd.about();
 
         /*--- Groovy Support ---*/
         Groovy.setScriptsPath("gscripts");
-
         try {
             Groovy.iniScriptEngine();
         } catch (Exception e) {
@@ -34,62 +23,39 @@ public class Main {
         }
         /*----------------------*/
 
-        /*---     CouchDB    ---*/
-        CouchDbConnector db = CouchDB.getDb("humansdb","http://localhost:5984");
-        final HumanRepository humanRepository = new HumanRepository(db);
-        /*----------------------*/
-
         get(new Route("/groovy/us") {
             @Override
             public Object handle(Request request, Response response) {
-                response.type("text/html");
-                try {
-
-                    Binding binding = new Binding();
-                    binding.setVariable("input", "WORLD");
-                    Groovy.run("hello.groovy", binding);
-
-                    return binding.getVariable("output").toString();
-
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                    return null;
-                }
+                return controllers.GroovyDemo.helloUS(request, response);
             }
         });
 
         get(new Route("/groovy/fr") {
             @Override
             public Object handle(Request request, Response response) {
-                response.type("text/html");
-                try {
+                return controllers.GroovyDemo.helloFR(request, response);
+            }
+        });
 
-                    Binding binding = new Binding();
-                    binding.setVariable("input","Tout Le Monde");
-                    Groovy.run("salut.groovy",binding);
-
-                    return binding.getVariable("output").toString();
-
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                    return null;
-                }
+        /* get All Humans */
+        get(new Route("/groovy/humans") {
+            @Override
+            public Object handle(Request request, Response response) {
+                return controllers.GroovyDemo.allHumans(request, response);
             }
         });
 
         get(new Route("/about") {
             @Override
             public Object handle(Request request, Response response) {
-                response.type("text/html");
-                return "<b>N3rd.stack:[java]</b>";
+                return controllers.Application.about(request, response);
             }
         });
 
         get(new Route("/about.json") {
             @Override
             public Object handle(Request request, Response response) {
-                response.type("application/json");
-                return "{name:'N3rd.stack:[java]',version:'before alpha'}";
+                return controllers.Application.aboutJSON(request, response);
             }
         });
 
@@ -97,10 +63,7 @@ public class Main {
         get(new Route("/humans/:id") {
             @Override
             public Object handle(Request request, Response response) {
-                String id = request.params(":id");
-                Human model = humanRepository.get(id);
-                response.type("application/json");
-                return Json.toJson(model);
+                return controllers.Humans.fetch(request, response);
             }
         });
 
@@ -108,10 +71,7 @@ public class Main {
         get(new Route("/humans") {
             @Override
             public Object handle(Request request, Response response) {
-                List<Human> humans = humanRepository.getAll();
-
-                response.type("application/json");
-                return Json.toJson(humans);
+                return controllers.Humans.getAll(request, response);
             }
         });
 
@@ -119,17 +79,7 @@ public class Main {
         post(new Route("/humans") {
             @Override
             public Object handle(Request request, Response response) {
-                response.type("application/json");
-                try {
-                    Human model = Json.fromJson(Json.parse(request.body()), Human.class);
-
-                    humanRepository.add(model);
-
-                    return Json.toJson(model);
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                    return Json.toJson(e);
-                }
+                return controllers.Humans.add(request, response);
             }
         });
 
@@ -137,18 +87,7 @@ public class Main {
         put(new Route("/humans/:id") {
             @Override
             public Object handle(Request request, Response response) {
-                response.type("application/json");
-                try {
-                    Human model = Json.fromJson(Json.parse(request.body()), Human.class);
-                    //String id = request.params(":id");
-                    humanRepository.update(model);
-
-                    return Json.toJson(model);
-                }
-                catch(Exception e){
-                    System.out.println(e.getMessage());
-                    return Json.toJson(e);
-                }
+                return controllers.Humans.update(request, response);
             }
         });
 
@@ -156,17 +95,13 @@ public class Main {
         delete(new Route("/humans/:id") {
             @Override
             public Object handle(Request request, Response response) {
-                String id = request.params(":id");
-                Human model = humanRepository.get(id);
-                humanRepository.remove(model);
-
-                response.type("application/json");
-                return Json.toJson(model);
+                return controllers.Humans.delete(request, response);
             }
         });
 
         //SERVE STATIC FILES
-        Assets.setPublicPath("app");
+        Assets.setPublicPath("public.n3rd");
+        //Assets.setPublicPath("public.simple");
         Assets.setHome("index.html");
         Assets.serveStatic();
 

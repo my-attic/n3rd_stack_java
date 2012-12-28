@@ -49,6 +49,7 @@ public class Assets {
                 final File file = new File(absolutePath + pathInfo);
 
 
+
                 if (!file.exists()) {
                     halt(404);
                     return null;
@@ -58,6 +59,10 @@ public class Assets {
                         .getFileNameMap()
                         .getContentTypeFor(file.getName());
 
+                /*System.out.println(absolutePath + pathInfo);
+                System.out.println(mime);
+                System.out.println(file.getName());*/
+
                 if(mime==null && file.getName().contains(".css")){
                     mime = "text/css";
                 }
@@ -65,6 +70,8 @@ public class Assets {
                 if(mime==null && file.getName().contains(".js")){
                     mime = "application/javascript";
                 }
+
+                //System.out.println(mime);
 
                 if("/".equals(pathInfo)) {pathInfo="/"+Assets.getHome();}
 

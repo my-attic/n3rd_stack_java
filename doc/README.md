@@ -1556,6 +1556,65 @@ Si vous ouvrez la console du navigateur et que vous cliquez sur le lien qui affi
 
 Et voilà. Votre stack est terminée (ok, il faut le dire vite, mais vous avez de quoi continuer par vos propre moyens).
 
+##On devient "pro" : Maven
+
+Nous allons "Maveniser" notre projet (dans IntelliJ, il faut avoir installé le plugin Maven).
+
+- Créez à la racine du projet un fichier `pom.xml` (merci à [Sébastien Letélié](https://github.com/sebmade) pour le pom :-)) :
+
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.k33g</groupId>
+    <artifactId>n3rd-stack</artifactId>
+    <version>0.1</version>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+        </resources>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>spark</groupId>
+            <artifactId>spark</artifactId>
+            <version>0.9.9.4-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ektorp</groupId>
+            <artifactId>org.ektorp</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.0.6</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>Spark repository</id>
+            <url>http://www.sparkjava.com/nexus/content/repositories/spark/</url>
+        </repository>
+    </repositories>
+</project>
+```
+
+- Supprimez le répertoire `lib` (celui où il y a tous les jars)
+- faites un click-droit sur `pom.xml` et sélectionnez **Add as Maven project**
+- patientez quelques instants, et voilà votre projet est "mavenisé"
+
+##La suite ... ?
+
+Il faudra refactorer ...
+
 
 
 
