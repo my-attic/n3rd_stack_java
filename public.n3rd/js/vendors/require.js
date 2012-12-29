@@ -2044,37 +2044,37 @@ var jam = {
     "packages": [
         {
             "name": "backbone",
-            "location": "js/vendor/backbone",
+            "location": "js/vendors/backbone",
             "main": "backbone.js"
         },
         {
             "name": "css",
-            "location": "js/vendor/css",
+            "location": "js/vendors/css",
             "main": "css.js"
         },
         {
             "name": "jquery",
-            "location": "js/vendor/jquery",
+            "location": "js/vendors/jquery",
             "main": "dist/jquery.js"
         },
         {
             "name": "knockback",
-            "location": "js/vendor/knockback",
+            "location": "js/vendors/knockback",
             "main": "knockback.js"
         },
         {
             "name": "knockout",
-            "location": "js/vendor/knockout",
+            "location": "js/vendors/knockout",
             "main": "knockout.js"
         },
         {
             "name": "text",
-            "location": "js/vendor/text",
+            "location": "js/vendors/text",
             "main": "text.js"
         },
         {
             "name": "underscore",
-            "location": "js/vendor/underscore",
+            "location": "js/vendors/underscore",
             "main": "underscore.js"
         }
     ],
@@ -2098,37 +2098,37 @@ if (typeof require !== "undefined" && require.config) {
     "packages": [
         {
             "name": "backbone",
-            "location": "js/vendor/backbone",
+            "location": "js/vendors/backbone",
             "main": "backbone.js"
         },
         {
             "name": "css",
-            "location": "js/vendor/css",
+            "location": "js/vendors/css",
             "main": "css.js"
         },
         {
             "name": "jquery",
-            "location": "js/vendor/jquery",
+            "location": "js/vendors/jquery",
             "main": "dist/jquery.js"
         },
         {
             "name": "knockback",
-            "location": "js/vendor/knockback",
+            "location": "js/vendors/knockback",
             "main": "knockback.js"
         },
         {
             "name": "knockout",
-            "location": "js/vendor/knockout",
+            "location": "js/vendors/knockout",
             "main": "knockout.js"
         },
         {
             "name": "text",
-            "location": "js/vendor/text",
+            "location": "js/vendors/text",
             "main": "text.js"
         },
         {
             "name": "underscore",
-            "location": "js/vendor/underscore",
+            "location": "js/vendors/underscore",
             "main": "underscore.js"
         }
     ],
@@ -2151,37 +2151,37 @@ else {
     "packages": [
         {
             "name": "backbone",
-            "location": "js/vendor/backbone",
+            "location": "js/vendors/backbone",
             "main": "backbone.js"
         },
         {
             "name": "css",
-            "location": "js/vendor/css",
+            "location": "js/vendors/css",
             "main": "css.js"
         },
         {
             "name": "jquery",
-            "location": "js/vendor/jquery",
+            "location": "js/vendors/jquery",
             "main": "dist/jquery.js"
         },
         {
             "name": "knockback",
-            "location": "js/vendor/knockback",
+            "location": "js/vendors/knockback",
             "main": "knockback.js"
         },
         {
             "name": "knockout",
-            "location": "js/vendor/knockout",
+            "location": "js/vendors/knockout",
             "main": "knockout.js"
         },
         {
             "name": "text",
-            "location": "js/vendor/text",
+            "location": "js/vendors/text",
             "main": "text.js"
         },
         {
             "name": "underscore",
-            "location": "js/vendor/underscore",
+            "location": "js/vendors/underscore",
             "main": "underscore.js"
         }
     ],

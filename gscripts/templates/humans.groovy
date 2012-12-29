@@ -5,8 +5,9 @@ def html = new MarkupBuilder(sw)
 
 html.html {
     head {
-        title ('Humans List')
-        script(src: '../js/vendors/jquery-1.8.3.min.js','')
+        title ('--- Humans List ---')
+        //script(src: '../js/vendors/jquery-1.8.3.min.js','')
+        script(src: '../js/vendors/jquery/dist/jquery.js','')
 
     }
     body {

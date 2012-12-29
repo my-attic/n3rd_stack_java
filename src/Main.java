@@ -8,10 +8,9 @@ import spark.*;
 import org.k33g.helpers.*;
 
 
-public class Main {
+public class Main implements spark.servlet.SparkApplication {
 
-    public static void main(String[] args)  {
-        setPort(9000);
+    private static void routes() {
         N3rd.about();
 
         /*--- Groovy Support ---*/
@@ -99,11 +98,26 @@ public class Main {
             }
         });
 
-        //SERVE STATIC FILES
-        Assets.setPublicPath("public.n3rd");
+    }
+
+    /* standalone mode */
+    public static void main(String[] args)  {
+        setPort(9000);
+        routes();
+
+        //SERVE STATIC FILES (only needed if standalone mode)
+        Assets.setPublicPath("public.n3rd"); //<--- static assets path
         //Assets.setPublicPath("public.simple");
         Assets.setHome("index.html");
         Assets.serveStatic();
+    }
 
+    /* Web Server mode */
+    @Override
+    public void init() {
+        routes();
+        /*
+            Try this : mvn jetty:run
+         */
     }
 }
