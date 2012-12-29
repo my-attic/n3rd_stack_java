@@ -14,7 +14,7 @@ public class Router {
         N3rd.about();
 
         /*--- Groovy Support ---*/
-        Groovy.setScriptsPath("gscripts");
+        Groovy.setScriptsPath("public.n3rd");
         try {
             Groovy.iniScriptEngine();
         } catch (Exception e) {

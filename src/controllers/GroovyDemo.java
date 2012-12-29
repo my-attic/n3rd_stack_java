@@ -51,7 +51,7 @@ public class GroovyDemo {
             response.type("text/html");
             Binding binding = new Binding();
             binding.setVariable("input",humans);
-            Groovy.run("templates/humans.groovy",binding);
+            Groovy.run("humans.groovy",binding);
             String html = binding.getVariable("output").toString();
             return html;
 
