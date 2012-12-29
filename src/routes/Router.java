@@ -13,37 +13,6 @@ public class Router {
     public static void routes() {
         N3rd.about();
 
-        /*--- Groovy Support ---*/
-        Groovy.setScriptsPath("public.n3rd");
-        try {
-            Groovy.iniScriptEngine();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-        /*----------------------*/
-
-        get(new Route("/groovy/us") {
-            @Override
-            public Object handle(Request request, Response response) {
-                return controllers.GroovyDemo.helloUS(request, response);
-            }
-        });
-
-        get(new Route("/groovy/fr") {
-            @Override
-            public Object handle(Request request, Response response) {
-                return controllers.GroovyDemo.helloFR(request, response);
-            }
-        });
-
-        /* get All Humans */
-        get(new Route("/groovy/humans") {
-            @Override
-            public Object handle(Request request, Response response) {
-                return controllers.GroovyDemo.allHumans(request, response);
-            }
-        });
-
         get(new Route("/about") {
             @Override
             public Object handle(Request request, Response response) {
@@ -95,6 +64,39 @@ public class Router {
             @Override
             public Object handle(Request request, Response response) {
                 return controllers.Humans.delete(request, response);
+            }
+        });
+
+        //EXPERIMENTAL
+
+        /*--- Groovy Support ---*/
+        Groovy.setScriptsPath("groovy");
+        try {
+            Groovy.iniScriptEngine();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        /*----------------------*/
+
+        get(new Route("/groovy/us") {
+            @Override
+            public Object handle(Request request, Response response) {
+                return controllers.GroovyDemo.helloUS(request, response);
+            }
+        });
+
+        get(new Route("/groovy/fr") {
+            @Override
+            public Object handle(Request request, Response response) {
+                return controllers.GroovyDemo.helloFR(request, response);
+            }
+        });
+
+        /* get All Humans */
+        get(new Route("/groovy/humans") {
+            @Override
+            public Object handle(Request request, Response response) {
+                return controllers.GroovyDemo.allHumans(request, response);
             }
         });
 

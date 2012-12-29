@@ -2,4 +2,5 @@ out/*
 out/production/*
 out/production/n3rd.stack.java/*
 n3rd.stack.java.iml
+groovy/*
 
