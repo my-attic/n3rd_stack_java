@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a97fc95-3e47-497d-a728-e321819c3523" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/hello.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.n3rd/gscripts/salut.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/css/layout.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/css/skeleton.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/collections/humans.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/controllers/humansCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/core/n3rd.stack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/models/human.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/vendors/backbone-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/vendors/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/vendors/knockback.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/vendors/knockout-2.2.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/vendors/underscore-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/js/vendors/yepnope.1.5.4-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public.simple/main.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gscripts/hello.groovy" afterPath="$PROJECT_DIR$/public.n3rd/gscripts/hello.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gscripts/salut.groovy" afterPath="$PROJECT_DIR$/public.n3rd/salut.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gscripts/templates/humans.groovy" afterPath="$PROJECT_DIR$/public.n3rd/humans.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/GroovyDemo.java" afterPath="$PROJECT_DIR$/src/controllers/GroovyDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Router.java" afterPath="$PROJECT_DIR$/src/routes/Router.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="n3rd.stack.java.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/01-CREATION.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356282847287" ignored="false" />
-    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356764451293" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356787074427" ignored="false" />
     <file path="/README.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356763178168" ignored="false" />
     <file path="/main.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356561977051" ignored="false" />
     <file path="/app.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356702582879" ignored="false" />
@@ -711,7 +687,11 @@
       <created>1356764454760</created>
       <updated>1356764454760</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="refactoring">
+      <created>1356787077287</created>
+      <updated>1356787077287</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -779,7 +759,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="externalize routes to Router" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -806,6 +786,7 @@
     <MESSAGE value="js" />
     <MESSAGE value="maven jetty" />
     <MESSAGE value="externalize routes to Router" />
+    <MESSAGE value="refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
