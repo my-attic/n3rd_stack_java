@@ -73,6 +73,27 @@ Dans `pom.xml` vous devez :
 - définir le chemin des fichiers statiques, par ex : `<webAppSourceDirectory>${basedir}/public.angular/app</webAppSourceDirectory>` ou `<webAppSourceDirectory>${basedir}/public.n3rd</webAppSourceDirectory>`, etc. ... Ainsi vous pouvez utilisez différentes stacks javascripts selon vos goûts.
 - définir le port http, par ex : `<port>9090</port>`
 
+
+##Sous Linux
+
+En cas d'erreurs retournées par maven à la compilation, rajoutez ceci dans `pom.xml` :
+
+            <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.0</version>
+                    <configuration>
+                      <source>1.7</source>
+                      <target>1.7</target>
+                    </configuration>
+            </plugin>
+
+
+##Sous Windows
+
+>>*Il faudra attendre un peu*
+
+
 ##Utilitaires de génération de code
 
 >>**Remarque :** cette partie est encore expérimentale.
