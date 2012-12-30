@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a97fc95-3e47-497d-a728-e321819c3523" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RE.INSTALL.NODES.MODULES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.NEXT.MD" afterPath="$PROJECT_DIR$/README.NEXT.MD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="n3rd.stack.java.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/01-CREATION.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356282847287" ignored="false" />
-    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356865268761" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356865658799" ignored="false" />
     <file path="/README.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356863218496" ignored="false" />
     <file path="/main.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356561977051" ignored="false" />
     <file path="/app.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356702582879" ignored="false" />
@@ -49,7 +49,7 @@
     <file path="/fragment.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356731525154" ignored="false" />
     <file path="/web.xml" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356761213682" ignored="false" />
     <file path="/Router.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356857027579" ignored="false" />
-    <file path="/README.NEXT.MD" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356863148968" ignored="false" />
+    <file path="/README.NEXT.MD" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356866020615" ignored="false" />
     <file path="/grunt.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356790767055" ignored="false" />
     <file path="/newjavamodel.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356841579085" ignored="false" />
     <file path="/javamodelrepository.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356853356726" ignored="false" />
@@ -125,10 +125,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="96" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.35117057">
+            <state line="28" column="96" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.NEXT.MD" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.NEXT.MD">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="14" selection-start="478" selection-end="478" vertical-scroll-proportion="0.6923077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RE.INSTALL.NODES.MODULES.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RE.INSTALL.NODES.MODULES.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="4" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="0" selection-start="3873" selection-end="4185" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tools/javamodelrepository.tpl" />
         <option value="$PROJECT_DIR$/tools/javamodelcontroller.tpl" />
         <option value="$PROJECT_DIR$/src/controllers/GroovyDemo.java" />
         <option value="$PROJECT_DIR$/src/routes/Humans.java" />
@@ -173,11 +208,12 @@
         <option value="$PROJECT_DIR$/src/routes/Router.java" />
         <option value="$PROJECT_DIR$/src/models/Animal.java" />
         <option value="$PROJECT_DIR$/tools/newjavamodel.js" />
-        <option value="$PROJECT_DIR$/README.NEXT.MD" />
         <option value="$PROJECT_DIR$/tools/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/RE.INSTALL.NODES.MODULES.md" />
+        <option value="$PROJECT_DIR$/README.NEXT.MD" />
       </list>
     </option>
   </component>
@@ -277,60 +313,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public.n3rd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="n3rd.stack.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="n3rd.stack.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public.angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="n3rd.stack.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="n3rd.stack.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public.angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="n3rd.stack.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="n3rd.stack.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public.angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -661,7 +643,11 @@
       <created>1356865091658</created>
       <updated>1356865091658</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add web-inf web.xml">
+      <created>1356865662402</created>
+      <updated>1356865662402</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -676,6 +662,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40894568" sideWeight="0.99648917" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -685,7 +672,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25878593" sideWeight="0.9965824" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40894568" sideWeight="0.99648917" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -729,7 +715,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge sebmade PR" />
+    <option name="LAST_COMMIT_MESSAGE" value="add web-inf web.xml" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -758,21 +744,12 @@
     <MESSAGE value="externalize routes to Router" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="merge sebmade PR" />
+    <MESSAGE value="add web-inf web.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/models/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="314" selection-end="338" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/js/models/human.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="43" selection-end="145" vertical-scroll-proportion="0.0" />
@@ -812,16 +789,6 @@
         <state line="15" column="71" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.NEXT.MD">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="67" selection-start="77" selection-end="77" vertical-scroll-proportion="0.12541807" />
@@ -850,7 +817,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="96" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.35117057">
+        <state line="28" column="96" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RE.INSTALL.NODES.MODULES.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="3873" selection-end="4185" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.NEXT.MD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="14" selection-start="478" selection-end="478" vertical-scroll-proportion="0.6923077">
           <folding />
         </state>
       </provider>
