@@ -1,5 +1,5 @@
 {
     "jam": {
-        "packageDir": "js/vendor"
+        "packageDir": "js/vendors"
     }
 }

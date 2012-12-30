@@ -69,6 +69,16 @@ Il y a aussi du javascript avec :
 - Deziper
 - Dans le répertoire, lancer la commande `mvn dependency:copy-dependencies` (1 fois si nécessaire)
 - Dans le répertoire, lancer la commande `mvn compile`
-- Dans le répertoire, lancer la commande `mvn exec:java -Dexec.maClass="Main"`
+
+###Lancement mode "standalone"
+
+
+- Dans le répertoire, lancer la commande `mvn exec:java -Dexec.maClass="Main"` puis ouvrez [http://localhost:9000](http://localhost:9000) (c'est la méthode `main` de la classe `Main` qui est exécutée)
+
+###Lancement mode "Web Server"
+
+autre possibilité :
+
+- Dans le répertoire, lancer la commande `mvn jetty:run` puis ouvrez [http://localhost:8080](http://localhost:8080) (c'est la méthode `init` de la classe `Main` qui est exécutée)
 
 

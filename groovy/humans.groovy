@@ -5,12 +5,11 @@ def html = new MarkupBuilder(sw)
 
 html.html {
     head {
-        title ('Humans List')
-        script(src: '../js/vendors/jquery-1.8.3.min.js','')
-
+        title ('--- Humans List ---')
+        script(src: '../js/vendors/jquery/dist/jquery.js','')
     }
     body {
-        h1 ("Groovy XML MarkupBuilder")
+        h1 ("Groovy XML MarkupBuilder ...")
         ul {
             input.each { human ->
                 li("${human.firstName} - ${human.lastName} (${human.id})")
@@ -18,8 +17,8 @@ html.html {
         }
 
         script('''
-            $("h1").css("color","blue");
-            $("ul").css("color","red");
+                $("h1").css("color","blue");
+                $("ul").css("color","red");
         ''')
 
     }
