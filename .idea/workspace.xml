@@ -2,56 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a97fc95-3e47-497d-a728-e321819c3523" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/.buildignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/test/vendor/angular-mocks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/vendor/angular-resource-1.0.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/vendor/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/vendor/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/css/bootstrap-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/css/bootstrap-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/css/bootstrap-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/css/bootstrap-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/components/bootstrap.css/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/components/bootstrap.css/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/vendor/es5-shim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/vendor/json3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/views/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/controllers/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/test/spec/controllers/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/testacular.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/README.md" afterPath="$PROJECT_DIR$/doc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="n3rd.stack.java.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/01-CREATION.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356282847287" ignored="false" />
-    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356864972717" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356865268761" ignored="false" />
     <file path="/README.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356863218496" ignored="false" />
     <file path="/main.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356561977051" ignored="false" />
     <file path="/app.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356702582879" ignored="false" />
@@ -81,7 +39,7 @@
     <file path="/Application.groovy" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356619068424" ignored="false" />
     <file path="/Main.groovy" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356619043768" ignored="false" />
     <file path="$PROJECT_DIR$/../sandbox/pom.xml" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356679546512" ignored="false" />
-    <file path="/pom.xml" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356789644474" ignored="false" />
+    <file path="/pom.xml" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356865467399" ignored="false" />
     <file path="$PROJECT_DIR$/../sandbox/src/Main.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356679128545" ignored="false" />
     <file path="$PROJECT_DIR$/../sandbox/src/main/java/Main.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356679795821" ignored="false" />
     <file path="/GroovyDemo.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356681781366" ignored="false" />
@@ -112,7 +70,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -147,6 +104,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -156,91 +114,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Animals.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes/Animals.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="javamodelroutes.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/javamodelroutes.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="71" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.NEXT.MD" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.NEXT.MD">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="20" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="30" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="48" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0">
+            <state line="20" column="38" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="96" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.35117057">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.angular/app/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="67" selection-start="77" selection-end="77" vertical-scroll-proportion="0.13043478">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="humansCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newjavamodel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/newjavamodel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="29" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
+            <state line="24" column="14" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -265,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/repositories/Humans.java" />
         <option value="$PROJECT_DIR$/tools/javamodelrepository.tpl" />
         <option value="$PROJECT_DIR$/tools/javamodelcontroller.tpl" />
         <option value="$PROJECT_DIR$/src/controllers/GroovyDemo.java" />
@@ -273,7 +169,6 @@
         <option value="$PROJECT_DIR$/routes.groovy" />
         <option value="$PROJECT_DIR$/src/routes/About.java" />
         <option value="$PROJECT_DIR$/src/routes/GroovyDemo.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/tools/javamodelroutes.tpl" />
         <option value="$PROJECT_DIR$/src/routes/Router.java" />
         <option value="$PROJECT_DIR$/src/models/Animal.java" />
@@ -281,6 +176,8 @@
         <option value="$PROJECT_DIR$/README.NEXT.MD" />
         <option value="$PROJECT_DIR$/tools/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -323,7 +220,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -380,12 +276,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public.n3rd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public.angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public.angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public.angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -403,20 +354,20 @@
     <property name="project.structure.side.proportion" value="0.1367989" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public.angular/app" />
       <recent name="$PROJECT_DIR$/public.n3rd" />
       <recent name="$PROJECT_DIR$/groovy" />
       <recent name="$PROJECT_DIR$/public.simple" />
       <recent name="$PROJECT_DIR$/public.n3rd/js/controllers" />
-      <recent name="$PROJECT_DIR$/public.n3rd/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/controllers" />
@@ -706,7 +657,11 @@
       <created>1356864886831</created>
       <updated>1356864886831</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="merge sebmade PR">
+      <created>1356865091658</created>
+      <updated>1356865091658</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -724,7 +679,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22801556" sideWeight="0.70447284" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22801556" sideWeight="0.70447284" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29493088" sideWeight="0.99789476" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -774,7 +729,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge sebmade PR" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -802,39 +757,25 @@
     <MESSAGE value="maven jetty" />
     <MESSAGE value="externalize routes to Router" />
     <MESSAGE value="refactoring" />
+    <MESSAGE value="merge sebmade PR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/repositories/Animals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Human.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="314" selection-end="338" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="4" selection-start="314" selection-end="338" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="19" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/js/models/human.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="43" selection-end="145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="43" selection-end="145" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
@@ -846,23 +787,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="128" selection-end="139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="19" selection-start="128" selection-end="139" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/newjavamodel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="29" selection-start="347" selection-end="347" vertical-scroll-proportion="0.025083613" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/Animals.java">
@@ -872,51 +807,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/javamodelroutes.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="71" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="71" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.NEXT.MD">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="20" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="48" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="67" selection-start="77" selection-end="77" vertical-scroll-proportion="0.13043478">
+        <state line="5" column="67" selection-start="77" selection-end="77" vertical-scroll-proportion="0.12541807" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="30" selection-start="113" selection-end="113" vertical-scroll-proportion="0.2006689" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="38" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.angular/app/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="96" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.35117057">
           <folding />
         </state>
       </provider>
