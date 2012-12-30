@@ -26,8 +26,8 @@
                 <version>7.0.0.pre5</version>
                 <configuration>
                     <scanIntervalSeconds>1</scanIntervalSeconds>
-                    <!--<webAppSourceDirectory>${basedir}/public.n3rd</webAppSourceDirectory>-->
-                    <webAppSourceDirectory>${basedir}/public.angular/app</webAppSourceDirectory>
+                    <webAppSourceDirectory>${basedir}/public.n3rd</webAppSourceDirectory>
+                    <!--<webAppSourceDirectory>${basedir}/public.angular/app</webAppSourceDirectory>-->
                     <webAppConfig>
                         <contextPath>/</contextPath>
                     </webAppConfig>
