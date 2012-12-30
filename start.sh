@@ -1,0 +1,1 @@
+grunt & mvn jetty:run
