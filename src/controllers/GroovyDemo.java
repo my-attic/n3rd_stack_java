@@ -2,9 +2,7 @@ package controllers;
 
 import groovy.lang.Binding;
 import models.Human;
-import repositories.HumanRepository;
 import org.k33g.helpers.Groovy;
-import repositories.Repositories;
 import spark.Request;
 import spark.Response;
 
@@ -18,7 +16,7 @@ public class GroovyDemo {
 
             Binding binding = new Binding();
             binding.setVariable("input", "WORLD");
-            Groovy.run("hello.groovy", binding);
+            Groovy.run("groovy/hello.groovy", binding);
 
             return binding.getVariable("output").toString();
 
@@ -34,7 +32,7 @@ public class GroovyDemo {
 
             Binding binding = new Binding();
             binding.setVariable("input","Tout Le Monde");
-            Groovy.run("salut.groovy",binding);
+            Groovy.run("groovy/salut.groovy",binding);
 
             return binding.getVariable("output").toString();
 
@@ -45,13 +43,13 @@ public class GroovyDemo {
     }
 
     public static String allHumans(Request request, Response response) {
-        List<Human> humans = Repositories.humanRepository.getAll();
+        List<Human> humans = repositories.Humans.repository.getAll();
 
         try {
             response.type("text/html");
             Binding binding = new Binding();
             binding.setVariable("input",humans);
-            Groovy.run("humans.groovy",binding);
+            Groovy.run("groovy/humans.groovy",binding);
             String html = binding.getVariable("output").toString();
             return html;
 

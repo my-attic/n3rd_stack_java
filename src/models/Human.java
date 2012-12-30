@@ -2,16 +2,9 @@ package models;
 
 import org.codehaus.jackson.annotate.*;
 
-/**
- * User: k33g_org
- * Date: 12/23/12
- * Time: 3:54 PM
- */
-
 /*
 http://backbonejs.org/#Model-idAttribute
  */
-
 
 //@JsonWriteNullProperties(false)
 //@JsonIgnoreProperties({"id", "revision"})

@@ -5,8 +5,8 @@ def html = new MarkupBuilder(sw)
 
 html.html {
     head {
-        title ('--- Humans List ---')
-        script(src: '../js/vendors/jquery/dist/jquery.js','')
+        title ('Humans List')
+        script(src: '../js/vendors/require.js','')
     }
     body {
         h1 ("Groovy XML MarkupBuilder ...")
@@ -17,8 +17,10 @@ html.html {
         }
 
         script('''
+            require(['jquery'], function ($) {
                 $("h1").css("color","blue");
-                $("ul").css("color","red");
+                $("ul").css("color","green");
+            });
         ''')
 
     }
@@ -26,3 +28,4 @@ html.html {
 }
 
 output = sw.toString();
+

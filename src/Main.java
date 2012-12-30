@@ -11,6 +11,7 @@ public class Main implements spark.servlet.SparkApplication {
     /* standalone mode */
     public static void main(String[] args)  {
         setPort(9000);
+        N3rd.about();
         Router.routes();
 
         //SERVE STATIC FILES (only needed if standalone mode)
@@ -23,6 +24,7 @@ public class Main implements spark.servlet.SparkApplication {
     /* Web Server mode */
     @Override
     public void init() {
+        N3rd.about();
         Router.routes();
         /*
             Try this : mvn jetty:run

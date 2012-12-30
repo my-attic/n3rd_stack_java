@@ -963,7 +963,7 @@ Ajoutez les imports nécessaires :
 
 ```java
 import org.ektorp.CouchDbConnector;
-import repositories.HumanRepository;
+import repositories.Humans;
 ```
 
 Puis le bout de code pour initialiser la base  (ou "ouvrir" la base si elle existe déjà) :

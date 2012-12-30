@@ -1,11 +1,5 @@
 package org.k33g.helpers;
 
-/**
- * User: k33g_org
- * Date: 12/23/12
- * Time: 9:45 PM
- */
-
 import groovy.lang.Binding;
 import groovy.util.GroovyScriptEngine;
 import groovy.util.ResourceException;

@@ -30,10 +30,17 @@
                     <webAppConfig>
                         <contextPath>/</contextPath>
                     </webAppConfig>
+                    <connectors>
+                        <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+                          <port>9090</port>
+                          <maxIdleTime>60000</maxIdleTime>
+                        </connector>
+                    </connectors>
                     <!--<classesDirectory>${basedir}/target/classes</classesDirectory>-->
 
                     <scanTargets>
-                        <scanTarget>/*.*</scanTarget>
+                        <scanTarget>out/*.*</scanTarget>
+                        <!--<scanTarget>/*.*</scanTarget>-->
                         <!--<scanTarget>src</scanTarget>
                         <scanTarget>src/*.java</scanTarget>-->
                     </scanTargets>
