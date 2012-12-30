@@ -1,13 +1,13 @@
 #Create a "tool"
 
-http://www.2ality.com/2011/12/nodejs-shell-scripting.html
+    #!/usr/bin/env node
 
-#!/usr/bin/env node
-
-chmod u+x myscript.js
-
-./myscript.js arg1 arg2 ...
+    chmod u+x myscript.js
 
 ##Windows ?
 
-type `node` before script
+type `node` before script name
+
+##Tools
+
+    ./tools/newjavamodel.js Animal
