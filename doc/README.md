@@ -1,6 +1,8 @@
 #N3rd.stack:[java]
 
-Je me suis refusé à utiliser Maven, car je ne le maîtrise pas, et je voulais faire quelque chose de plus "handmade" ou "from scratch". 
+Pour démarrer avec maven :
+- mvn clean install
+- mvn exec:java -Dexec.mainClass="Main" 
 
 >>*N3rd.stack:[java] se veut être "framework agnostic" (un peu comme Backbone). Elle apporte une base, vous pouvez ensuite utiliser ce que vous voulez pour la base de données ou la partie javascript.*
 
