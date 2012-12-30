@@ -16,6 +16,7 @@ public class Main implements spark.servlet.SparkApplication {
 
         //SERVE STATIC FILES (only needed if standalone mode)
         Assets.setPublicPath("public.n3rd"); //<--- static assets path
+        //Assets.setPublicPath("public.angular/app");
         //Assets.setPublicPath("public.simple");
         Assets.setHome("index.html");
         Assets.serveStatic();
