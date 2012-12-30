@@ -2,19 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a97fc95-3e47-497d-a728-e321819c3523" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RE.INSTALL.NODES.MODULES.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.NEXT.MD" afterPath="$PROJECT_DIR$/README.NEXT.MD" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.NEXT.MD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/000-new_project.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/001-new_project.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/002-new_project.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/003-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/004-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/005-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/006-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/007-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/008-libs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/009-libs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/010-libs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/011-launch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/012-launch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/013-static.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/014-static.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/015-model.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/016-model.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/017-groovy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/018-groovy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/019-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/020-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/021-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/022-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/023-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/024-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/025-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/026-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/027-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/028-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/029-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/030-couchdb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/031-js.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/032-js.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/033-js.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/rsrc/034-js.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README_.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.angular/app/views/main.html" afterPath="$PROJECT_DIR$/public.angular/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="n3rd.stack.java.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/01-CREATION.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356282847287" ignored="false" />
-    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356865658799" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356871862632" ignored="false" />
     <file path="/README.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356863218496" ignored="false" />
     <file path="/main.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356561977051" ignored="false" />
     <file path="/app.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356702582879" ignored="false" />
     <file path="/index.html" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356703131680" ignored="false" />
-    <file path="/Main.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356764238757" ignored="false" />
+    <file path="/Main.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356869178080" ignored="false" />
     <file path="/Json.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356274072272" ignored="false" />
     <file path="/Assets.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356613501045" ignored="false" />
     <file path="/N3rd.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356295363801" ignored="false" />
@@ -49,13 +87,14 @@
     <file path="/fragment.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356731525154" ignored="false" />
     <file path="/web.xml" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356761213682" ignored="false" />
     <file path="/Router.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356857027579" ignored="false" />
-    <file path="/README.NEXT.MD" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356866020615" ignored="false" />
+    <file path="/README.NEXT.MD" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356870713706" ignored="false" />
     <file path="/grunt.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356790767055" ignored="false" />
     <file path="/newjavamodel.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356841579085" ignored="false" />
     <file path="/javamodelrepository.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356853356726" ignored="false" />
     <file path="/javamodelcontroller.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356853778976" ignored="false" />
     <file path="/routes.groovy" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356856082885" ignored="false" />
     <file path="/javamodelroutes.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356856992872" ignored="false" />
+    <file path="/main.html" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356869588956" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,30 +153,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file leaf-file-name="README_.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README_.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="38" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="96" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
+            <state line="118" column="18" selection-start="5749" selection-end="5749" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.NEXT.MD" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.NEXT.MD">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="14" selection-start="478" selection-end="478" vertical-scroll-proportion="0.6923077">
+            <state line="16" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,28 +180,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name=".npmignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.npmignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="3873" selection-end="4185" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/README.md">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.angular/app/WEB-INF/web.xml">
+      <file leaf-file-name=".gitattributes" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitattributes">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="14" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.208334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.angular/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.angular/app/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="6" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-18.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="308" selection-end="434" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -198,7 +262,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tools/javamodelcontroller.tpl" />
         <option value="$PROJECT_DIR$/src/controllers/GroovyDemo.java" />
         <option value="$PROJECT_DIR$/src/routes/Humans.java" />
         <option value="$PROJECT_DIR$/routes.groovy" />
@@ -206,13 +269,14 @@
         <option value="$PROJECT_DIR$/src/routes/GroovyDemo.java" />
         <option value="$PROJECT_DIR$/tools/javamodelroutes.tpl" />
         <option value="$PROJECT_DIR$/src/routes/Router.java" />
-        <option value="$PROJECT_DIR$/src/models/Animal.java" />
         <option value="$PROJECT_DIR$/tools/newjavamodel.js" />
         <option value="$PROJECT_DIR$/tools/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/RE.INSTALL.NODES.MODULES.md" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/models/Animal.java" />
+        <option value="$PROJECT_DIR$/public.angular/app/views/main.html" />
         <option value="$PROJECT_DIR$/README.NEXT.MD" />
       </list>
     </option>
@@ -227,8 +291,24 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="35" />
     <option name="y" value="22" />
-    <option name="width" value="1331" />
+    <option name="width" value="1179" />
     <option name="height" value="746" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -312,7 +392,65 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public.n3rd" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repositories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,10 +466,10 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.11933174" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="preferences.general" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sandbox" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../n3rd_stack_java_origins" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="project.structure.side.proportion" value="0.1367989" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -647,11 +785,15 @@
       <created>1356865662402</created>
       <updated>1356865662402</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="howto">
+      <created>1356866045352</created>
+      <updated>1356866045353</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="22" width="1331" height="746" extended-state="6" />
+    <frame x="35" y="22" width="1179" height="746" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -662,11 +804,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40894568" sideWeight="0.99648917" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40894568" sideWeight="0.99648917" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22801556" sideWeight="0.70447284" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25860548" sideWeight="0.5910543" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29493088" sideWeight="0.99789476" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -715,7 +857,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add web-inf web.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="ménage" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -745,17 +887,66 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="merge sebmade PR" />
     <MESSAGE value="add web-inf web.xml" />
+    <MESSAGE value="howto" />
+    <MESSAGE value="ménage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public.n3rd/js/models/human.js">
+    <entry file="file://$PROJECT_DIR$/grunt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="43" selection-end="145" vertical-scroll-proportion="0.0" />
+        <state line="9" column="26" selection-start="216" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="39" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="26" selection-start="1580" selection-end="1597" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/javamodelroutes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="42" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="32" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#764#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.208334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.angular/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -764,67 +955,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="128" selection-end="139" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/newjavamodel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="347" selection-end="347" vertical-scroll-proportion="0.025083613" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/Animals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="308" selection-end="434" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/javamodelroutes.tpl">
+    <entry file="file://$PROJECT_DIR$/public.angular/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="71" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="67" selection-start="77" selection-end="77" vertical-scroll-proportion="0.12541807" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="113" selection-end="113" vertical-scroll-proportion="0.2006689" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="38" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.angular/app/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="96" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
+        <state line="29" column="6" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-18.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README_.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="18" selection-start="5749" selection-end="5749" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -836,16 +988,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="3873" selection-end="4185" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.NEXT.MD">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="14" selection-start="478" selection-end="478" vertical-scroll-proportion="0.6923077">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
