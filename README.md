@@ -58,7 +58,7 @@ Ou :
 
     ./start.sh
 
-##Utilisation & "Hot relading"
+##Utilisation & pseudo "Hot reloading"
 
 [http://localhost:9000/](http://localhost:9000/)
 
