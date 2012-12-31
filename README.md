@@ -98,12 +98,16 @@ En cas d'erreurs retournées par maven à la compilation, rajoutez ceci dans `po
 
 >>**Remarque :** cette partie est encore expérimentale.
 
-Si dans un terminal, dans le répertoire de la stack, vous tapez la commande `./tools/newjavamodel.js Model_Name` (par ex: `./tools/newjavamodel.js Alien`), les codes suivants seront générés :
+Si dans un terminal, dans le répertoire de la stack, vous tapez la commande `./tools/newjavamodel.js Model_Name`, par exemple :
 
-- `src/models/Alien.java`
-- `src/repositories/Aliens.java` (pour se connecter à CouchDB)
-- `src/controllers/Aliens.java` (les services REST de CRUD)
-- `src/routes/Aliens.java`
+    ./tools/newjavamodel.js Human '{"firstName":"String","lastName":"String"}'
+
+les codes suivants seront générés :
+
+- `src/models/Human.java`
+- `src/repositories/Humans.java` (pour se connecter à CouchDB + les "finders")
+- `src/controllers/Humans.java` (les services REST de CRUD)
+- `src/routes/Humans.java`
 
 >>**Attention :** Il faut ensuite ajouter la route dans `src/routes/Router.java`
 

@@ -1,6 +1,5 @@
 package controllers;
 
-//import models.Human;
 import models.*;
 import org.codehaus.jackson.JsonNode;
 import org.k33g.helpers.Json;
@@ -10,9 +9,16 @@ import spark.Response;
 import java.util.List;
 
 public class Humans {
+
+    public static JsonNode getAllBobs(Request request, Response response) {
+        List<Human> humans = repositories.Humans.repository.findByFirstName("Bob");
+        response.type("application/json");
+        return Json.toJson(humans);
+    }
+
+
     public static JsonNode getAll(Request request, Response response) {
         List<Human> humans = repositories.Humans.repository.getAll();
-
         response.type("application/json");
         return Json.toJson(humans);
     }
@@ -28,7 +34,6 @@ public class Humans {
         String id = request.params(":id");
         Human model = repositories.Humans.repository.get(id);
         repositories.Humans.repository.remove(model);
-
         response.type("application/json");
         return Json.toJson(model);
     }

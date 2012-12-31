@@ -1,8 +1,10 @@
 package repositories;
 
-import models.Human;
-import org.ektorp.CouchDbConnector;
-import org.ektorp.support.CouchDbRepositorySupport;
+import java.util.*;
+
+import models.*;
+import org.ektorp.*;
+import org.ektorp.support.*;
 import org.k33g.helpers.CouchDB;
 
 public class Humans extends CouchDbRepositorySupport<Human> {
@@ -12,7 +14,19 @@ public class Humans extends CouchDbRepositorySupport<Human> {
 
     public Humans(CouchDbConnector db) {
         super(Human.class, db);
+        initStandardDesignDocument();
     }
+
+    @GenerateView
+    public List<Human> findByFirstName(String firstName) {
+        return queryView("by_firstName", firstName);
+    }
+
+    @GenerateView
+    public List<Human> findByLastName(String lastName) {
+        return queryView("by_lastName", lastName);
+    }
+
 }
 
 

@@ -8,9 +8,9 @@ public class Router {
         Humans.routes();
         About.routes();
 
-        //GroovyDemo.routes();
+        GroovyDemo.routes();
 
-        Animals.routes();
+        //Animals.routes();
 
 
 

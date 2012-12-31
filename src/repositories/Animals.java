@@ -1,8 +1,10 @@
 package repositories;
 
+import java.util.*;
+
 import models.*;
-import org.ektorp.CouchDbConnector;
-import org.ektorp.support.CouchDbRepositorySupport;
+import org.ektorp.*;
+import org.ektorp.support.*;
 import org.k33g.helpers.CouchDB;
 
 public class Animals extends CouchDbRepositorySupport<Animal> {
@@ -12,8 +14,14 @@ public class Animals extends CouchDbRepositorySupport<Animal> {
 
     public Animals(CouchDbConnector db) {
         super(Animal.class, db);
+        initStandardDesignDocument();
     }
-}
 
+    @GenerateView
+    public List<Animal> findByName(String name) {
+        return queryView("by_name", name);
+    }
+
+}
 
 

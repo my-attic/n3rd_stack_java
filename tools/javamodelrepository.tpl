@@ -1,8 +1,10 @@
 package repositories;
 
+import java.util.*;
+
 import models.*;
-import org.ektorp.CouchDbConnector;
-import org.ektorp.support.CouchDbRepositorySupport;
+import org.ektorp.*;
+import org.ektorp.support.*;
 import org.k33g.helpers.CouchDB;
 
 public class {{model_name}}s extends CouchDbRepositorySupport<{{model_name}}> {
@@ -12,8 +14,16 @@ public class {{model_name}}s extends CouchDbRepositorySupport<{{model_name}}> {
 
     public {{model_name}}s(CouchDbConnector db) {
         super({{model_name}}.class, db);
+        initStandardDesignDocument();
     }
-}
 
+    {{#properties}}
+    @GenerateView
+    public List<{{model_name}}> findBy{{name}}({{type}} {{private_name}}) {
+        return queryView("by_{{private_name}}", {{private_name}});
+    }
+
+    {{/properties}}
+}
 
 

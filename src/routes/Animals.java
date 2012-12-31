@@ -6,9 +6,7 @@ import spark.Route;
 
 import static spark.Spark.*;
 
-/*TODO :
-  add Animals.routes(); to routes.Router Class
-*/
+//TODO :add Animals.routes(); to routes.Router Class
 
 public class Animals {
     public static void routes() {

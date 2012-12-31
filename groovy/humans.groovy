@@ -6,6 +6,7 @@ def html = new MarkupBuilder(sw)
 html.html {
     head {
         title ('Humans List')
+        link(href:'../css/bootstrap.css', type:'text/css', rel:'stylesheet')
         script(src: '../js/vendors/require.js','')
     }
     body {
@@ -22,6 +23,12 @@ html.html {
                 $("ul").css("color","green");
             });
         ''')
+
+        style(type:"text/css", '''  
+            body {
+                margin: 20px;
+            }
+        ''')  
 
     }
 
