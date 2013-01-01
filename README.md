@@ -123,9 +123,6 @@ Si vous essayez cette commande :
 
     ./tools/newmodel.js Human '{"firstName":"String","lastName":"String"}' n3rd
 
-
->>**Et pour Angular ?** ... les générateurs sont en cours de réalisation
-
 Cela génèrera la partie front javascript/html en plus :
 
 - `public.n3rd/index.humans.html`
@@ -136,6 +133,8 @@ Cela génèrera la partie front javascript/html en plus :
 
 Pour tester, essayez : [http://localhoqt:9090/index.humans.html](http://localhoqt:9090/index.humans.html)
 *(une fois que tout est compilé)*
+
+>>**Et pour Angular ?** ... les générateurs sont en cours de réalisation
 
 ##Au fait ...
 
