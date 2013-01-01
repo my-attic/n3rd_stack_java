@@ -1,10 +1,12 @@
 <h1>N3rd.stack:[java]</h1>
-<h3>With TwitterBootstrap & Angular.js</h3>
+<h3>Human sample</h3>
 <div id="formHumanView">
     <form class="form-inline">
-        <input ng-model="firstName"/><span> </span>
-        <input ng-model="lastName"/>
-        <button ng-click="addHuman(firstName, lastName)">ADD ME</button>
+
+        <input type="text" ng-model="firstName"/><span></span>
+        <input type="text" ng-model="lastName"/><span></span>
+
+        <button class="btn" ng-click="addHuman(firstName,lastName)">Add Me</button>
     </form>
 </div>
 
@@ -16,13 +18,21 @@
 <div id="listHumansView">
     <table class="table table-striped table-bordered table-hover">
         <thead>
-        <tr><th>id</th><th>FirstName</th><th>LastName</th><th>Action</th></tr>
+            <tr>
+                <th>id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Action</th>
+            </tr>
         </thead>
         <tbody>
         <tr ng-repeat="human in humans">
-            <td><a ng-click="select(human)">{{human._id}}</a></td>
+
+            <td><a ng-click="select(human)">{{human._id}};</a></td>
+
             <td ng-bind="human.firstName"></td>
             <td ng-bind="human.lastName"></td>
+
             <td><a ng-click="selectAndDelete(human)">Delete</a></td>
         </tr>
         </tbody>

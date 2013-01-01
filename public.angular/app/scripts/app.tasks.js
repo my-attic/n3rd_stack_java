@@ -4,12 +4,12 @@ var n3rdStackJavaApp = angular.module('n3rdStackJavaApp', ['ngResource'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
+        templateUrl: 'views/main.tasks.html',
+        controller: 'TasksCtrl',
         resolve: {
-          humans: function($resource) {
-            var Human = $resource('/humans' + '/:id', {id: '@_id'}, {'update': {method: 'PUT' }});
-            return Human.query();
+          tasks: function($resource) {
+            var Task = $resource('/tasks' + '/:id', {id: '@_id'}, {'update': {method: 'PUT' }});
+            return Task.query();
           }
         }
       })
@@ -17,3 +17,6 @@ var n3rdStackJavaApp = angular.module('n3rdStackJavaApp', ['ngResource'])
         redirectTo: '/'
       });
   }]);
+
+
+

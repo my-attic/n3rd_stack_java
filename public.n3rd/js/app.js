@@ -14,6 +14,7 @@ function ($, css, cssresponsive) {
 
                 $("h1").html("N3rd.stack:[java]");
                 $("h3").html("With TwitterBootstrap, Backbone, Knockout, KnockBack, Require.js, ...");
+                $("h2").html("by @k33g_org");
                 $("body").css("visibility","visible");  /*<body style="visibility:hidden">*/
 
 

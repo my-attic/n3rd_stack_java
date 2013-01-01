@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>N3rd.stack:[java]</title>
+        <title></title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="components/bootstrap.css/css/bootstrap.css">
@@ -16,19 +16,14 @@
     </head>
     <body ng-app="n3rdStackJavaApp">
 
-    <h1>N3rd.stack:[java]</h1>
-    <h3>With TwitterBootstrap & Angular</h3>
-
-    <pre>Documentation à écrire</pre>
-
-    <ul>
-        <li><a href="index.tasks.html">index.tasks.html</a></li>
-        <li><a href="index.humans.html">index.humans.html</a></li>
-    </ul>
+    <div ng-view></div>
 
     <script src="scripts/vendor/angular.js"></script>
     <script src="scripts/vendor/angular-resource-1.0.1.js"></script>
-
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/app.{{_model_name}}s.js"></script>
+    <script src="scripts/controllers/{{_model_name}}sCtrl.js"></script>
+    <!-- endbuild -->
 
     </body>
 </html>

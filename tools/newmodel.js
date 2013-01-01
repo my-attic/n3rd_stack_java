@@ -37,6 +37,7 @@ if (path.basename(process.cwd())!=='tools') {
     ie :
  ./tools/newmodel.js Animal '{"name":"String","remark":"String"}'
  ./tools/newmodel.js Human '{"firstName":"String","lastName":"String"}'
+ ./tools/newmodel.js Task '{"label":"String", "who":"String", "done":"boolean"}' n3rd
 
  */
 fs.readFile("./"+dir+"javamodel.java.tpl", 'utf8', function(err, data) {
@@ -107,6 +108,32 @@ fs.readFile("./"+dir+"javamodelroutes.java.tpl", 'utf8', function(err, data) {
     fs.writeFile(dir_src+"src/routes/"+model_name+"s.java", source_code, function(err) {
         if (err) throw err;
         console.log("The file", dir_src+"src/routes/"+model_name+"s.java", "was saved!");
+
+        fs.readdir(dir_src+"src/routes", function(err, data){
+
+            //console.log(data)
+            var routes = [];
+            data.filter(function(classname){ return classname!=="Router.java" }).forEach(function(classname){
+                if(path.extname(classname)==".java") routes.push(classname.split(".java")[0]);
+            });
+            //console.log(routes);
+
+            /*------------------------------------------------*/
+            /* Create Router.java                             */
+            /*------------------------------------------------*/
+
+            fs.readFile("./"+dir+"javaroutes.java.tpl", 'utf8', function(err, data) {
+                if (err) throw err;
+                var template = data;
+                var source_code = mustache.to_html(template, {routes:routes});
+
+                fs.writeFile(dir_src+"src/routes/Router.java", source_code, function(err) {
+                    if (err) throw err;
+                    console.log("The file", dir_src+"src/routes/Router.java", "was saved!");
+                });
+            });
+
+        });
     });
 });
 
@@ -158,6 +185,7 @@ if(front=="n3rd") {
         if (err) throw err;
         var template = data;
 
+        fields_args="";
         for(var m in props) {
             fields_args+=m + " : '"+ m +"',"
         }
@@ -221,5 +249,97 @@ if(front=="n3rd") {
 
 //TODO
 if(front=="angular") {
+
+    //angularjscontroller.js.tpl
+    /*------------------------------------------------*/
+    /* Create front end controller (sample)           */
+    /*------------------------------------------------*/
+    fs.readFile("./"+dir+"angularjscontroller.js.tpl", 'utf8', function(err, data) {
+        if (err) throw err;
+        var template = data;
+
+        fields_args="";
+        for(var m in props) {
+            fields_args+=m +","
+        }
+        fields_args = fields_args.slice(0,fields_args.length-1);
+
+        var source_code = mustache.to_html(template, {
+            model_name:model_name,
+            _model_name:_model_name,
+            properties:properties,
+            fields_args:fields_args
+        });
+
+        fs.writeFile(dir_src+"public.angular/app/scripts/controllers/"+_model_name+"sCtrl.js", source_code, function(err) {
+            if (err) throw err;
+            console.log("The file", dir_src+"public.angular/app/scripts/controllers/"+_model_name+"sCtrl.js", "was saved!");
+        });
+    });
+
+    /*------------------------------------------------*/
+    /* Create front end app.js (sample)           */
+    /*------------------------------------------------*/
+    fs.readFile("./"+dir+"angularjsapp.js.tpl", 'utf8', function(err, data) {
+        if (err) throw err;
+        var template = data;
+
+        var source_code = mustache.to_html(template, {
+            model_name:model_name,
+            _model_name:_model_name
+            //properties:properties
+        });
+
+        fs.writeFile(dir_src+"public.angular/app/scripts/app."+_model_name+"s.js", source_code, function(err) {
+            if (err) throw err;
+            console.log("The file", dir_src+"public.angular/app/scripts/app."+_model_name+"s.js", "was saved!");
+        });
+    });
+
+    /*------------------------------------------------*/
+    /* Create front end html view (sample)            */
+    /*------------------------------------------------*/
+    fs.readFile("./"+dir+"angularhtmlview.html.tpl", 'utf8', function(err, data) {
+        if (err) throw err;
+        var template = data;
+
+        fields_args="";
+        for(var m in props) {
+            fields_args+=m +","
+        }
+        fields_args = fields_args.slice(0,fields_args.length-1);
+
+        var source_code = mustache.to_html(template, {
+            model_name:model_name,
+            _model_name:_model_name,
+            properties:properties,
+            fields_args:fields_args,
+            open:"{{", close:"}}"
+        });
+
+        fs.writeFile(dir_src+"public.angular/app/views/main."+_model_name+"s.html", source_code, function(err) {
+            if (err) throw err;
+            console.log("The file", dir_src+"public.angular/app/views/main."+_model_name+"s.html", "was saved!");
+        });
+    });
+
+    /*------------------------------------------------*/
+    /* Create front end index.html (sample)           */
+    /*------------------------------------------------*/
+    fs.readFile("./"+dir+"angularhtmlindex.html.tpl", 'utf8', function(err, data) {
+        if (err) throw err;
+        var template = data;
+
+        var source_code = mustache.to_html(template, {
+            model_name:model_name,
+            _model_name:_model_name,
+        });
+
+        fs.writeFile(dir_src+"public.angular/app/index."+_model_name+"s.html", source_code, function(err) {
+            if (err) throw err;
+            console.log("The file", dir_src+"public.angular/app/index."+_model_name+"s.html", "was saved!");
+        });
+    });
+
 
 }

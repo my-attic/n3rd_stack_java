@@ -6,21 +6,8 @@ import spark.Route;
 
 import static spark.Spark.*;
 
-/*TODO :
-  add Humans.routes(); to routes.Router Class
-*/
-
 public class Humans {
     public static void routes() {
-
-        /* get All Humans */
-        get(new Route("/bobs") {
-            @Override
-            public Object handle(Request request, Response response) {
-                return controllers.Humans.getAllBobs(request, response);
-            }
-        });
-
 
         /* get one Human by id */
         get(new Route("/humans/:id") {

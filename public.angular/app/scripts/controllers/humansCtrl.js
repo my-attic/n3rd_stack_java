@@ -1,15 +1,17 @@
 'use strict';
 
-n3rdStackJavaApp.controller('MainCtrl', function($scope, $resource, humans) {
+n3rdStackJavaApp.controller('HumansCtrl', function($scope, $resource, humans) {
   $scope.humans = humans;
   $scope.selectedHuman = {};
 
   $scope.Human = $resource('/humans' + '/:id', {id: '@_id'}, {'update': {method: 'PUT' }});
 
-  $scope.addHuman = function(firstName, lastName) {
+  $scope.addHuman = function(firstName,lastName) {
     $scope.selectedHuman = new $scope.Human();
+
     $scope.selectedHuman.firstName = firstName;
     $scope.selectedHuman.lastName = lastName;
+
     $scope.selectedHuman.$save(function(data) {
       console.log("Human.save() success");
       $scope.humans.push(data);
@@ -36,3 +38,4 @@ n3rdStackJavaApp.controller('MainCtrl', function($scope, $resource, humans) {
     });
   };
 });
+

@@ -13,7 +13,7 @@ function ($, HumansCtrl, css, cssresponsive) {
         init: function () {
             $(function (){
                 $("h1").html("N3rd.stack:[java]");
-                $("h3").html("With TwitterBootstrap & Require.js");
+                $("h3").html("Human sample");
 
                 window.HumansCtrl = HumansCtrl;
                 HumansCtrl.bindViews();

@@ -115,8 +115,7 @@ les codes suivants seront générés :
 - `src/repositories/Humans.java` (pour se connecter à CouchDB + les "finders")
 - `src/controllers/Humans.java` (les services REST de CRUD)
 - `src/routes/Humans.java`
-
->>**Attention :** Il faut ensuite ajouter la route `Humans.routes();` dans `src/routes/Router.java`
+- `src/routes/Router.java` (regénéré à chaque fois à partir de la liste des routes)
 
 Sauvegardez tout (si tout va bien, cela recompilera et relancera Jetty)
 
@@ -138,7 +137,16 @@ Cela génèrera la partie front javascript/html en plus :
 Pour tester, essayez : [http://localhoqt:9090/index.humans.html](http://localhoqt:9090/index.humans.html)
 *(une fois que tout est compilé)*
 
->>**Et pour Angular ?** ... les générateurs sont en cours de réalisation
+**Et pour Angular ?** : `./tools/newmodel.js Human '{"firstName":"String","lastName":"String"}' angular`
+
+Cela génèrera la partie front javascript/html en plus mais pour **Angular** :
+
+- `public.angular/app/index.humans.html`
+- `public.angular/app/views/main.humans.html`
+- `public.angular/app/scripts/controllers/humansCtrl.js`
+- `public.angular/app/scripts/app.humans.js`
+
+>>**Pour tester la version Angular :** n'oubliez pas la section correspondante dans `pom.xml` : `<webAppSourceDirectory>${basedir}/public.angular/app</webAppSourceDirectory>`
 
 ##Au fait ...
 
