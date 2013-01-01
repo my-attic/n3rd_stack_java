@@ -6,8 +6,8 @@
 </head>
 
 <body style="visibility:hidden">
-<h1>mon titre</h1>
-<h3>mon sous-titre</h3>
+<h1></h1>
+<h3></h3>
 <div id="form{{model_name}}View">
     <form class="form-inline">
         {{#properties}}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>N3rd.stack:[java]</title>
+</head>
+
+<body style="visibility:hidden">
+<h1></h1>
+<h3></h3>
+<div id="formHumanView">
+    <form class="form-inline">
+        <input type="text" data-bind="value: firstName"/><span> </span>
+        <input type="text" data-bind="value: lastName"/>
+        <button class="btn" data-bind="click:HumansCtrl.addHuman">ADD ME</button>
+    </form>
+</div>
+
+<div id="messageHumanView" class="alert alert-info">
+    <span data-bind="text: firstName"></span>
+    <span data-bind="text: lastName"></span>
+</div>
+
+<div id="listHumansView">
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+        <tr><th>id</th><th>FirstName</th><th>LastName</th><th>Action</th></tr>
+        </thead>
+        <tbody data-bind="foreach: humans">
+        <tr>
+            <td><a data-bind="click:HumansCtrl.select, text:_id, attr:{href:_id}"></a></td>
+            <td data-bind="text: firstName"></td>
+            <td data-bind="text: lastName"></td>
+            <td><a data-bind="click:HumansCtrl.selectAndDelete, attr:{href:_id}">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="js/vendors/require.js"></script>
+<script>
+    require(['jquery', 'js/app.humans'], function ($, app) {
+        app.init();
+    });
+
+</script>
+
+<style>
+    body {
+        margin: 20px;
+    }
+</style>
+
+</body>
+</html>
+
+

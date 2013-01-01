@@ -60,7 +60,11 @@ Ou :
 
 ##Utilisation & pseudo "Hot reloading"
 
-[http://localhost:9000/](http://localhost:9000/)
+Dans le navigateur vous pouvez ouvrir : [http://localhost:9090/index.humans.html](http://localhost:9090/index.humans.html) pour tester l'exemple.
+
+>>Par défaut [http://localhost:9090](http://localhost:9090) pointe sur `index.html`
+
+>>**Attention :** la partie "Hot reloading" est un bricolage expérimental
 
 Dès que vous modifiez un code java, grunt le détecte et lance un `mvn compile`. Le plugin jetty, détecte qu'il y a eu une compilation et recharge l'application.
 
