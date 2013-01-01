@@ -10,4 +10,5 @@ type `node` before script name
 
 ##Tools
 
-    ./tools/newmodel.js Animal
+    ./tools/newmodel.js Human '{"firstName":"String","lastName":"String"}' n3rd
+    ./tools/newmodel.js Task '{"label":"String", "who":"String", "done":"boolean"}' angular

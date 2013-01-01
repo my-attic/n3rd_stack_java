@@ -7,7 +7,7 @@ import spark.Route;
 import static spark.Spark.get;
 
 
-public class About {
+public class Application {
     public static void routes() {
         get(new Route("/about") {
             @Override

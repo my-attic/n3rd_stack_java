@@ -20,25 +20,11 @@ public class GroovyDemo {
         }
         /*----------------------*/
 
-        get(new Route("/us") {
-            @Override
-            public Object handle(Request request, Response response) {
-                return controllers.GroovyDemo.helloUS(request, response);
-            }
-        });
-
-        get(new Route("/fr") {
-            @Override
-            public Object handle(Request request, Response response) {
-                return controllers.GroovyDemo.helloFR(request, response);
-            }
-        });
-
         /* get All Humans */
-        get(new Route("/groovy_humans") {
+        get(new Route("/groovy") {
             @Override
             public Object handle(Request request, Response response) {
-                return controllers.GroovyDemo.allHumans(request, response);
+                return controllers.GroovyDemo.about(request, response);
             }
         });
     }

@@ -15,6 +15,13 @@
             <param-name>applicationClass</param-name>
             <param-value>Main</param-value>
         </init-param>
+        <init-param>
+            <param-name>cacheControl</param-name>
+            <!--
+            <param-value>max-age=3600,public</param-value>
+            -->
+            <param-value>no-store,no-cache,must-revalidate</param-value>
+        </init-param>
     </filter>
 
     <filter-mapping>
