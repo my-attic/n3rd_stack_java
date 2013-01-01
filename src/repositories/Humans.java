@@ -17,6 +17,16 @@ public class Humans extends CouchDbRepositorySupport<Human> {
         initStandardDesignDocument();
     }
 
+    @GenerateView
+    public List<Human> findByFirstName(String firstName) {
+        return queryView("by_firstName", firstName);
+    }
+
+    @GenerateView
+    public List<Human> findByLastName(String lastName) {
+        return queryView("by_lastName", lastName);
+    }
+
 }
 
 
