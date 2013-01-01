@@ -105,6 +105,8 @@ En cas d'erreurs retournées par maven à la compilation, rajoutez ceci dans `po
 
 >>**Remarque :** cette partie est encore expérimentale.
 
+###Génération du code "back"
+
 Si dans un terminal, dans le répertoire de la stack, vous tapez la commande `./tools/newmodel.js Model_Name`, par exemple :
 
     ./tools/newmodel.js Human '{"firstName":"String","lastName":"String"}'
@@ -121,6 +123,8 @@ Sauvegardez tout (si tout va bien, cela recompilera et relancera Jetty)
 
 Pour tester, essayez : [http://localhoqt:9090/humans](http://localhoqt:9090/humans)
 *(une fois que tout est compilé)*
+
+###Génération du code "front"
 
 Si vous essayez cette commande :
 
