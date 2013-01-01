@@ -6,13 +6,11 @@ public class Router {
 
 
         Humans.routes();
+        Tasks.routes();
+
         About.routes();
 
         GroovyDemo.routes();
-
-        //Animals.routes();
-
-
 
     }
 }

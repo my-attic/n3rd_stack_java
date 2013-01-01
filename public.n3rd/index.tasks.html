@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>N3rd.stack:[java]</title>
+</head>
+
+<body style="visibility:hidden">
+<h1>mon titre</h1>
+<h3>mon sous-titre</h3>
+<div id="formTaskView">
+    <form class="form-inline">
+        <input type="text" data-bind="value: label"/><span></span>
+        <input type="text" data-bind="value: who"/><span></span>
+        <input type="text" data-bind="value: done"/><span></span>
+        <button class="btn" data-bind="click:TasksCtrl.addTask">Add Me</button>
+    </form>
+</div>
+
+<div id="messageTaskView" class="alert alert-info">
+    <span data-bind="text: label"></span>
+    <span data-bind="text: who"></span>
+    <span data-bind="text: done"></span>
+</div>
+
+<div id="listTasksView">
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Label</th>
+                <th>Who</th>
+                <th>Done</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: tasks">
+        <tr>
+            <td><a data-bind="click:TasksCtrl.select, text:_id, attr:{href:_id}"></a></td>
+            <td data-bind="text: label"></td>
+            <td data-bind="text: who"></td>
+            <td data-bind="text: done"></td>
+            <td><a data-bind="click:TasksCtrl.selectAndDelete, attr:{href:_id}">Delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="js/vendors/require.js"></script>
+<script>
+    require(['jquery', 'js/app.tasks'], function ($, app) {
+        app.init();
+    });
+
+</script>
+
+<style>
+    body {
+        margin: 20px;
+    }
+</style>
+
+</body>
+</html>

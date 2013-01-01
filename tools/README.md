@@ -10,4 +10,4 @@ type `node` before script name
 
 ##Tools
 
-    ./tools/newjavamodel.js Animal
+    ./tools/newmodel.js Animal

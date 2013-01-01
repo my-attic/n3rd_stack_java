@@ -3,20 +3,20 @@ var css = 'css!../../css/bootstrap.css'
 
 define([
     'jquery',
-    'js/controllers/humansCtrl',
+    'js/controllers/tasksCtrl',
     css,
     cssMin
 ],
-function ($, HumansCtrl, css, cssresponsive) {
+function ($, TasksCtrl, css, cssresponsive) {
 
     return {
         init: function () {
             $(function (){
                 $("h1").html("N3rd.stack:[java]");
-                $("h3").html("With TwitterBootstrap & Require.js");
+                $("h3").html("Task sample");
 
-                window.HumansCtrl = HumansCtrl;
-                HumansCtrl.bindViews();
+                window.TasksCtrl = TasksCtrl;
+                TasksCtrl.bindViews();
 
                 $("body").css("visibility","visible");  /*<body style="visibility:hidden">*/
 

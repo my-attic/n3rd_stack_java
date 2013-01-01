@@ -64,7 +64,10 @@ Ou :
 
 Dès que vous modifiez un code java, grunt le détecte et lance un `mvn compile`. Le plugin jetty, détecte qu'il y a eu une compilation et recharge l'application.
 
- >>**Remarque :** cela fonctionne très bien avec SublimeText, avec IntelliJ la sauvegarde automatique entre en conflict avec le système, donc utilisez plutôt un simple `mvn jetty:run` et déclenchez le rechargement par une recompilation.
+>>**Remarque :** cela fonctionne très bien avec SublimeText, avec IntelliJ la sauvegarde automatique entre en conflict avec le système, donc utilisez plutôt un simple `mvn jetty:run` et déclenchez le rechargement par une recompilation.
+
+>>**Sinon le plus simple** : dans un terminal : lancez `mvn jetty:run` et compilez "à la main" avec un `mvn compile` (ou à partir de votre ide)
+
 
 ##Paramétrages
 
@@ -98,9 +101,9 @@ En cas d'erreurs retournées par maven à la compilation, rajoutez ceci dans `po
 
 >>**Remarque :** cette partie est encore expérimentale.
 
-Si dans un terminal, dans le répertoire de la stack, vous tapez la commande `./tools/newjavamodel.js Model_Name`, par exemple :
+Si dans un terminal, dans le répertoire de la stack, vous tapez la commande `./tools/newmodel.js Model_Name`, par exemple :
 
-    ./tools/newjavamodel.js Human '{"firstName":"String","lastName":"String"}'
+    ./tools/newmodel.js Human '{"firstName":"String","lastName":"String"}'
 
 les codes suivants seront générés :
 
@@ -109,11 +112,30 @@ les codes suivants seront générés :
 - `src/controllers/Humans.java` (les services REST de CRUD)
 - `src/routes/Humans.java`
 
->>**Attention :** Il faut ensuite ajouter la route dans `src/routes/Router.java`
+>>**Attention :** Il faut ensuite ajouter la route `Humans.routes();` dans `src/routes/Router.java`
 
 Sauvegardez tout (si tout va bien, cela recompilera et relancera Jetty)
 
-Pour tester, essayez : [http://localhoqt:9090/aliens]
+Pour tester, essayez : [http://localhoqt:9090/humans](http://localhoqt:9090/humans)
+*(une fois que tout est compilé)*
+
+Si vous essayez cette commande :
+
+    ./tools/newmodel.js Human '{"firstName":"String","lastName":"String"}' n3rd
+
+
+>>**Et pour Angular ?** ... les générateurs sont en cours de réalisation
+
+Cela génèrera la partie front javascript/html en plus :
+
+- `public.n3rd/index.humans.html`
+- `public.n3rd/js/app.humans.js`
+- `public.n3rd/js/models/human.js`
+- `public.n3rd/js/collection/humans.js`
+- `public.n3rd/js/controllers/humansCtrl.js`
+
+Pour tester, essayez : [http://localhoqt:9090/index.humans.html](http://localhoqt:9090/index.humans.html)
+*(une fois que tout est compilé)*
 
 ##Au fait ...
 
