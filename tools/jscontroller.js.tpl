@@ -5,7 +5,8 @@ define([
     'knockback',
     'js/models/{{_model_name}}',
     'js/collections/{{_model_name}}s'
-], function($, Backbone, ko, kb, {{model_name}}, {{model_name}}s) {
+],
+function($, Backbone, ko, kb, {{model_name}}, {{model_name}}s) {
 
     var {{model_name}}sCtrl = Backbone.View.extend({},{//static
         model : new {{model_name}}({

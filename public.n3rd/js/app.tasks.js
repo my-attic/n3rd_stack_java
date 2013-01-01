@@ -1,5 +1,5 @@
 var css = 'css!../../css/bootstrap.css'
-    ,cssMin = 'css!../../css/bootstrap-responsive.css';
+,   cssMin = 'css!../../css/bootstrap-responsive.css';
 
 define([
     'jquery',

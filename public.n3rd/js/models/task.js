@@ -1,7 +1,7 @@
 define(['backbone'],
-    function(Backbone) {
+function(Backbone) {
 
-        var Task = Backbone.Model.extend({
+    var Task = Backbone.Model.extend({
         urlRoot :"/tasks",
         idAttribute: '_id'
     });

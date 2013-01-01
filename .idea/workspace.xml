@@ -2,42 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a97fc95-3e47-497d-a728-e321819c3523" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/angularhtmlindex.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/angularhtmlview.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/angularjsapp.js.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/angularjscontroller.js.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/app.tasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/index.humans.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/index.tasks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/javaroutes.java.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/views/main.tasks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public.angular/app/scripts/controllers/tasksCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public.angular/app/scripts/app.js" afterPath="$PROJECT_DIR$/public.angular/app/scripts/app.humans.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public.angular/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/public.angular/app/scripts/controllers/humansCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public.angular/app/views/main.html" afterPath="$PROJECT_DIR$/public.angular/app/views/main.humans.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/About.java" afterPath="$PROJECT_DIR$/src/routes/About.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/Humans.java" afterPath="$PROJECT_DIR$/src/controllers/Humans.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repositories/Humans.java" afterPath="$PROJECT_DIR$/src/repositories/Humans.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Humans.java" afterPath="$PROJECT_DIR$/src/routes/Humans.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Router.java" afterPath="$PROJECT_DIR$/src/routes/Router.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/repositories/Tasks.java" afterPath="$PROJECT_DIR$/src/repositories/Tasks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.n3rd/js/app.humans.js" afterPath="$PROJECT_DIR$/public.n3rd/js/app.humans.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.n3rd/js/app.js" afterPath="$PROJECT_DIR$/public.n3rd/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.angular/app/index.html" afterPath="$PROJECT_DIR$/public.angular/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.n3rd/index.html" afterPath="$PROJECT_DIR$/public.n3rd/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/javamodelroutes.java.tpl" afterPath="$PROJECT_DIR$/tools/javamodelroutes.java.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/newmodel.js" afterPath="$PROJECT_DIR$/tools/newmodel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.n3rd/js/app.tasks.js" afterPath="$PROJECT_DIR$/public.n3rd/js/app.tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/jsapp.js.tpl" afterPath="$PROJECT_DIR$/tools/jsapp.js.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/jscollection.js.tpl" afterPath="$PROJECT_DIR$/tools/jscollection.js.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/jscontroller.js.tpl" afterPath="$PROJECT_DIR$/tools/jscontroller.js.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/jsmodel.js.tpl" afterPath="$PROJECT_DIR$/tools/jsmodel.js.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.n3rd/js/models/task.js" afterPath="$PROJECT_DIR$/public.n3rd/js/models/task.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.n3rd/js/collections/tasks.js" afterPath="$PROJECT_DIR$/public.n3rd/js/collections/tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public.n3rd/js/controllers/tasksCtrl.js" afterPath="$PROJECT_DIR$/public.n3rd/js/controllers/tasksCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="n3rd.stack.java.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/01-CREATION.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356282847287" ignored="false" />
-    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357034834794" ignored="false" />
-    <file path="/README.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357065751761" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357065938021" ignored="false" />
+    <file path="/README.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357065927599" ignored="false" />
     <file path="/main.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356561977051" ignored="false" />
-    <file path="/app.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356702582879" ignored="false" />
-    <file path="/index.html" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357064973309" ignored="false" />
+    <file path="/app.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357077697374" ignored="false" />
+    <file path="/index.html" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357077840930" ignored="false" />
     <file path="/Main.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356869178080" ignored="false" />
     <file path="/Json.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356274072272" ignored="false" />
     <file path="/Assets.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356613501045" ignored="false" />
@@ -95,6 +80,7 @@
     <file path="/angularjscontroller.js.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357061405014" ignored="false" />
     <file path="/angularjsapp.js.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357062061785" ignored="false" />
     <file path="/angularhtmlindex.html.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357064521969" ignored="false" />
+    <file path="/app.humans.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357077689102" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,37 +139,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.angular/app/index.html">
+      <file leaf-file-name="task.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/js/models/task.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="951" selection-end="1101" vertical-scroll-proportion="-14.375">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
+      <file leaf-file-name="app.humans.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.humans.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="49" selection-start="616" selection-end="616" vertical-scroll-proportion="-17.5">
+            <state line="1" column="4" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="92" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.humans.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/index.humans.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="16" selection-start="367" selection-end="378" vertical-scroll-proportion="-6.875">
+            <state line="29" column="16" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -198,46 +175,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.humans.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.humans.js">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="42" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+            <state line="22" column="41" selection-start="539" selection-end="539" vertical-scroll-proportion="0.59891105">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.humans.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.angular/app/views/main.humans.html">
+      <file leaf-file-name="index.humans.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/index.humans.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="28" selection-start="260" selection-end="260" vertical-scroll-proportion="-5.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="16.416666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.tasks.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public.angular/app/views/main.tasks.html">
+      <file leaf-file-name="index.tasks.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/index.tasks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="28" selection-start="307" selection-end="307" vertical-scroll-proportion="-5.625">
+            <state line="50" column="11" selection-start="1501" selection-end="1508" vertical-scroll-proportion="-11.083333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angularhtmlview.html.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/angularhtmlview.html.tpl">
+      <file leaf-file-name="jsapp.js.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/jsapp.js.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="28" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+            <state line="1" column="4" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="humansCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="47" selection-start="6000" selection-end="6000" vertical-scroll-proportion="0.46619216">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasksCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/tasksCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="14" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -262,22 +248,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/routes/About.java" />
-        <option value="$PROJECT_DIR$/tools/javamodelroutes.java.tpl" />
-        <option value="$PROJECT_DIR$/tools/javaroutes.java.tpl" />
-        <option value="$PROJECT_DIR$/tools/angularjsapp.js.tpl" />
-        <option value="$PROJECT_DIR$/tools/angularhtmlindex.html.tpl" />
-        <option value="$PROJECT_DIR$/tools/newmodel.js" />
         <option value="$PROJECT_DIR$/tools/angularjscontroller.js.tpl" />
-        <option value="$PROJECT_DIR$/public.n3rd/js/app.js" />
         <option value="$PROJECT_DIR$/public.angular/app/index.html" />
-        <option value="$PROJECT_DIR$/public.n3rd/index.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/public.n3rd/js/app.humans.js" />
         <option value="$PROJECT_DIR$/public.angular/app/views/main.humans.html" />
         <option value="$PROJECT_DIR$/public.angular/app/views/main.tasks.html" />
         <option value="$PROJECT_DIR$/tools/angularhtmlview.html.tpl" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tools/jsmodel.js.tpl" />
+        <option value="$PROJECT_DIR$/public.n3rd/js/collections/tasks.js" />
+        <option value="$PROJECT_DIR$/tools/jscollection.js.tpl" />
+        <option value="$PROJECT_DIR$/public.n3rd/js/controllers/tasksCtrl.js" />
+        <option value="$PROJECT_DIR$/tools/jscontroller.js.tpl" />
+        <option value="$PROJECT_DIR$/tools/jsapp.js.tpl" />
+        <option value="$PROJECT_DIR$/public.n3rd/js/app.humans.js" />
+        <option value="$PROJECT_DIR$/public.n3rd/js/app.js" />
+        <option value="$PROJECT_DIR$/public.n3rd/index.html" />
       </list>
     </option>
   </component>
@@ -380,6 +366,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public.n3rd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -412,7 +448,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public.angular" />
+              <option name="myItemId" value="public.n3rd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,33 +470,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public.angular" />
+              <option name="myItemId" value="public.n3rd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="n3rd.stack.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="n3rd.stack.java" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public.angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,15 +492,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public.angular" />
+              <option name="myItemId" value="public.n3rd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="collections" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -869,7 +895,15 @@
       <created>1357034845611</created>
       <updated>1357034845612</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Code generators (Angular)">
+      <created>1357065807738</created>
+      <updated>1357065807738</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Code generators (Angular)">
+      <created>1357065941404</created>
+      <updated>1357065941405</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -888,7 +922,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22801556" sideWeight="0.74121404" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22801556" sideWeight="0.74121404" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29392973" sideWeight="0.99789476" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -937,7 +971,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code generators" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code generators (Angular)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -972,70 +1006,106 @@
     <MESSAGE value="mvn linux" />
     <MESSAGE value="couchdb repo, code generation" />
     <MESSAGE value="Code generators" />
+    <MESSAGE value="Code generators (Angular)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public.angular/app/scripts/app.tasks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/angularjscontroller.js.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.angular/app/scripts/controllers/tasksCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.angular/app/index.tasks.html">
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/models/human.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/newmodel.js">
+    <entry file="file://$PROJECT_DIR$/tools/jsmodel.js.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="1" selection-start="995" selection-end="1065" vertical-scroll-proportion="0.0">
+        <state line="9" column="52" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/collections/humans.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/jscollection.js.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/jscontroller.js.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="61" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/collections/tasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/tasksCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="14" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/jsapp.js.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/controllers/humansCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.humans.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+        <state line="29" column="16" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public.angular/app/index.html">
+    <entry file="file://$PROJECT_DIR$/public.n3rd/index.tasks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="951" selection-end="1101" vertical-scroll-proportion="-14.375">
+        <state line="50" column="11" selection-start="1501" selection-end="1508" vertical-scroll-proportion="-11.083333">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
+    <entry file="file://$PROJECT_DIR$/public.n3rd/js/models/task.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="49" selection-start="616" selection-end="616" vertical-scroll-proportion="-17.5">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/public.n3rd/index.humans.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="92" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="16.416666">
           <folding />
         </state>
       </provider>
@@ -1047,44 +1117,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/js/app.humans.js">
+    <entry file="file://$PROJECT_DIR$/public.n3rd/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.n3rd/index.humans.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="367" selection-end="378" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.angular/app/views/main.humans.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="260" selection-end="260" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public.angular/app/views/main.tasks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="307" selection-end="307" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/angularhtmlview.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="47" selection-start="6000" selection-end="6000" vertical-scroll-proportion="0.46619216">
+        <state line="22" column="41" selection-start="539" selection-end="539" vertical-scroll-proportion="0.59891105">
           <folding />
         </state>
       </provider>

@@ -17,6 +17,16 @@ public class Tasks extends CouchDbRepositorySupport<Task> {
         initStandardDesignDocument();
     }
 
+    @GenerateView
+    public List<Task> findByLabel(String label) {
+        return queryView("by_label", label);
+    }
+
+    @GenerateView
+    public List<Task> findByWho(String who) {
+        return queryView("by_who", who);
+    }
+
 }
 
 

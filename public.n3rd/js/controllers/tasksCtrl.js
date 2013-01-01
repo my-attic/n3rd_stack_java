@@ -5,7 +5,8 @@ define([
     'knockback',
     'js/models/task',
     'js/collections/tasks'
-], function($, Backbone, ko, kb, Task, Tasks) {
+],
+function($, Backbone, ko, kb, Task, Tasks) {
 
     var TasksCtrl = Backbone.View.extend({},{//static
         model : new Task({
