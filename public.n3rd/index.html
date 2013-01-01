@@ -9,13 +9,11 @@
 <h1></h1>
 <h3></h3>
 <h2></h2>
-
+<pre>Documentation à écrire</pre>
 <script src="js/vendors/require.js"></script>
 <script>
-    require(['jquery'], function ($) {
-        $("h1").html("N3rd.stack:[java]");
-        $("h3").html("With TwitterBootstrap, Backbone, Knockout, KnockBack, Require.js, ...");
-        $("body").css("visibility","visible");  /*<body style="visibility:hidden">*/
+    require(['js/app'], function (app) {
+        app.init();
     });
 
 </script>
