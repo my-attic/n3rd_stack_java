@@ -8,6 +8,17 @@ A java-noSQL(*) stack born to create SPA
 
 ##Installation
 
+    git clone https://github.com/k33g/n3rd_stack_java.git
+
+Or you can download [https://github.com/k33g/n3rd_stack_java/archive/master.zip](https://github.com/k33g/n3rd_stack_java/archive/master.zip)
+
+###Prerequisites
+
+- **Maven**
+- **Nodejs** and **npm** [http://nodejs.org/](http://nodejs.org/)
+- **Grunt** [http://gruntjs.com/](http://gruntjs.com/) *(`npm install -g grunt`)*
+
+>>*Nodejs and Grunt are here only as tools to generate source codes.*
 
 ##Playing with it
 
@@ -224,14 +235,29 @@ Launch **Jetty** :
 
 And open : [http://localhost:9090/index.animals.html](http://localhost:9090/index.animals.html)
 
+##Kind of "Hot Reloading"
 
+>>**CAUTION** : This is EXPERIMENTAL.
 
-##Parameters
+Type this command :
 
-    //TODO
+    grunt & mvn jetty:run
 
+Or :
+
+    ./start.sh
+
+As soon as you modify java source code, **Grunt** detects the update and automatically launch `mvn compile`. Then **Jetty** plugin detects update of `.class` files and reload the application.
+
+##Groovy support
+
+- see `src/controllers/GroovyDemo.java`
+- see `groovy/about.groovy`
+
+>>*this section is to detail more precisely*
 
 ##Next steps
 
 - sessions management
 - MongoDB support
+- Redis support

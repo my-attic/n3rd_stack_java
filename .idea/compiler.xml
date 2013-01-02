@@ -29,6 +29,9 @@
         <module name="n3rd.stack.java" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="n3rd.stack.java" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

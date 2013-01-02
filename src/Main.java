@@ -3,9 +3,10 @@
     N3rd.stack:[java]
  */
 
-import static spark.Spark.*;
 import routes.Router;
 import org.k33g.helpers.*;
+
+import static spark.Spark.setPort;
 
 public class Main implements spark.servlet.SparkApplication {
     /* standalone mode for tests*/
@@ -19,6 +20,7 @@ public class Main implements spark.servlet.SparkApplication {
         //Assets.setPublicPath("public.angular/app");
         Assets.setHome("index.html");
         Assets.serveStatic();
+
     }
 
     /* Web Server mode */
