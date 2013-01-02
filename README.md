@@ -212,7 +212,7 @@ Apply the same principle as previously :
 
 In file `pom.xml` :
 
-<webAppSourceDirectory>${basedir}/public.angular/app</webAppSourceDirectory>
+    <webAppSourceDirectory>${basedir}/public.angular/app</webAppSourceDirectory>
 
 You can now type (in a terminal), this command :
 
