@@ -138,7 +138,7 @@ Cela génèrera la partie front javascript/html en plus :
 - `public.n3rd/js/collection/humans.js`
 - `public.n3rd/js/controllers/humansCtrl.js`
 
-Pour tester, essayez : [http://localhoqt:9090/index.humans.html](http://localhoqt:9090/index.humans.html)
+Pour tester, essayez : [http://localhost:9090/index.humans.html](http://localhost:9090/index.humans.html)
 *(une fois que tout est compilé)*
 
 **Et pour Angular ?** : `./tools/newmodel.js Human '{"firstName":"String","lastName":"String"}' angular`
