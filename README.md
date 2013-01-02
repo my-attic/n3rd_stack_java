@@ -4,7 +4,7 @@
 
 A java-noSQL(*) stack born to create SPA
 
->>*(*): this is not mandatory, but the basic stack works with CouchDB.*
+>>(*): this is not mandatory, but the basic stack works with CouchDB.
 
 ##Installation
 
