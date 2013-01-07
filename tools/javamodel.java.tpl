@@ -1,36 +1,17 @@
 package models;
 
-import org.codehaus.jackson.annotate.*;
+import couchdb.Model;
+import repositories.{{model_name}}s;
 
-//@JsonWriteNullProperties(false)
-@JsonIgnoreProperties({"id", "revision"})
-public class {{model_name}} {
+public class {{model_name}} extends Model {
 
-    @JsonProperty("_id")
-    private String id;
-
-    @JsonProperty("_rev")
-    private String revision;
+    public static {{model_name}}s repository = new {{model_name}}s();
 
     {{#properties}}
     private {{type}} {{private_name}};
     {{/properties}}
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getRevision() {
-        return revision;
-    }
-
-    public void setRevision(String revision) {
-        this.revision = revision;
-    }
+    /*you can use only public fields if you want*/
 
     {{#properties}}
     public {{type}} get{{name}}() {

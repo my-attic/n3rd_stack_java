@@ -2,23 +2,15 @@ package repositories;
 
 import java.util.*;
 
+import couchdb.Repository;
 import models.*;
-import org.ektorp.*;
 import org.ektorp.support.*;
-import org.k33g.helpers.CouchDB;
+import couchdb.CouchDB;
 
-public class {{model_name}}s extends CouchDbRepositorySupport<{{model_name}}> {
+public class {{model_name}}s extends Repository<{{model_name}}> {
 
-    private static CouchDbConnector {{_model_name}}sDB = CouchDB.getDb("{{_model_name}}sdb", "http://localhost:5984");
-    public static {{model_name}}s repository = new {{model_name}}s({{_model_name}}sDB);
-
-    public {{model_name}}s(CouchDbConnector db) {
-        super({{model_name}}.class, db);
-        initStandardDesignDocument();
-    }
-
-    public List<Revision> getDocRevisions(String id) {
-        return {{_model_name}}sDB.getRevisions(id);
+    public {{model_name}}s() {
+        super({{model_name}}.class, CouchDB.getDb("{{_model_name}}sdb", "http://localhost:5984"));
     }
 
     {{#properties}}
@@ -29,5 +21,4 @@ public class {{model_name}}s extends CouchDbRepositorySupport<{{model_name}}> {
 
     {{/properties}}
 }
-
 

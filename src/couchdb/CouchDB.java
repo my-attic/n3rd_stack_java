@@ -1,4 +1,4 @@
-package org.k33g.helpers;
+package couchdb;
 
 import org.ektorp.CouchDbConnector;
 import org.ektorp.CouchDbInstance;
