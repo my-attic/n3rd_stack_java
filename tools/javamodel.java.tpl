@@ -2,7 +2,7 @@ package models;
 
 import org.codehaus.jackson.annotate.*;
 
-@JsonWriteNullProperties(false)
+//@JsonWriteNullProperties(false)
 @JsonIgnoreProperties({"id", "revision"})
 public class {{model_name}} {
 

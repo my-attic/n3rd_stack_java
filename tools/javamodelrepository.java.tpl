@@ -17,6 +17,10 @@ public class {{model_name}}s extends CouchDbRepositorySupport<{{model_name}}> {
         initStandardDesignDocument();
     }
 
+    public List<Revision> getDocRevisions(String id) {
+        return {{_model_name}}sDB.getRevisions(id);
+    }
+
     {{#properties}}
     @GenerateView
     public List<{{model_name}}> findBy{{name}}({{type}} {{private_name}}) {

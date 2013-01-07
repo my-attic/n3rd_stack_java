@@ -258,6 +258,5 @@ As soon as you modify java source code, **Grunt** detects the update and automat
 
 ##Next steps
 
-- sessions management
 - MongoDB support
 - Redis support
