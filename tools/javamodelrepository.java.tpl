@@ -9,6 +9,8 @@ import couchdb.CouchDB;
 
 public class {{model_name}}s extends Repository<{{model_name}}> {
 
+    public static {{model_name}}s repository = new {{model_name}}s();
+
     public {{model_name}}s() {
         super({{model_name}}.class, CouchDB.getDb("{{_model_name}}sdb", "http://localhost:5984"));
     }

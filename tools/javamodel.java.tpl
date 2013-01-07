@@ -1,11 +1,8 @@
 package models;
 
 import couchdb.Model;
-import repositories.{{model_name}}s;
 
 public class {{model_name}} extends Model {
-
-    public static {{model_name}}s repository = new {{model_name}}s();
 
     {{#properties}}
     private {{type}} {{private_name}};

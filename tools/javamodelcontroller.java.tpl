@@ -15,7 +15,7 @@ public class {{model_name}}s {
         response.type("application/json");
 
         try {
-            List<{{model_name}}> {{_model_name}}s = {{model_name}}.repository.getAll();
+            List<{{model_name}}> {{_model_name}}s = repositories.{{model_name}}s.repository.getAll();
 
             return Json.toJson({{_model_name}}s);
 
@@ -30,7 +30,7 @@ public class {{model_name}}s {
 
         try {
             String id = request.params(":id");
-            {{model_name}} model = {{model_name}}.repository.get(id);
+            {{model_name}} model = repositories.{{model_name}}s.repository.get(id);
 
             return Json.toJson(model);
         } catch (Exception e) {
@@ -44,7 +44,7 @@ public class {{model_name}}s {
 
         try {
             String id = request.params(":id");
-            List<Revision> revisions = {{model_name}}.repository.getDocRevisions(id);
+            List<Revision> revisions = repositories.{{model_name}}s.repository.getDocRevisions(id);
 
             return Json.toJson(revisions);
 
@@ -59,7 +59,7 @@ public class {{model_name}}s {
         try {
             String id = request.params(":id");
             String rev = request.params(":rev");
-            {{model_name}} model = {{model_name}}.repository.get(id, new Options().revision(rev));
+            {{model_name}} model = repositories.{{model_name}}s.repository.get(id, new Options().revision(rev));
 
             return Json.toJson(model);
 
@@ -73,8 +73,8 @@ public class {{model_name}}s {
         response.type("application/json");
         try {
             String id = request.params(":id");
-            {{model_name}} model = {{model_name}}.repository.get(id);
-            {{model_name}}.repository.remove(model);
+            {{model_name}} model = repositories.{{model_name}}s.repository.get(id);
+            repositories.{{model_name}}s.repository.remove(model);
 
             return Json.toJson(model);
 
@@ -89,7 +89,7 @@ public class {{model_name}}s {
         try {
             {{model_name}} model = Json.fromJson(Json.parse(request.body()), {{model_name}}.class);
 
-            {{model_name}}.repository.add(model);
+            repositories.{{model_name}}s.repository.add(model);
 
             return Json.toJson(model);
         } catch (Exception e) {
@@ -103,7 +103,7 @@ public class {{model_name}}s {
         try {
             {{model_name}} model = Json.fromJson(Json.parse(request.body()), {{model_name}}.class);
             //String id = request.params(":id");
-            {{model_name}}.repository.update(model);
+            repositories.{{model_name}}s.repository.update(model);
 
             return Json.toJson(model);
         }

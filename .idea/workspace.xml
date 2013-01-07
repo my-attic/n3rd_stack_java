@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a97fc95-3e47-497d-a728-e321819c3523" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/couchdb/Model.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/couchdb/Repository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/k33g/helpers/CouchDB.java" afterPath="$PROJECT_DIR$/src/couchdb/CouchDB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Router.java" afterPath="$PROJECT_DIR$/src/routes/Router.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/javamodel.java.tpl" afterPath="$PROJECT_DIR$/tools/javamodel.java.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/javamodelcontroller.java.tpl" afterPath="$PROJECT_DIR$/tools/javamodelcontroller.java.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/javamodelrepository.java.tpl" afterPath="$PROJECT_DIR$/tools/javamodelrepository.java.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="n3rd.stack.java.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/01-CREATION.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356282847287" ignored="false" />
-    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357584567891" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357590208739" ignored="false" />
     <file path="/README.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357131219290" ignored="false" />
     <file path="/main.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1356561977051" ignored="false" />
     <file path="/app.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357077697374" ignored="false" />
@@ -80,7 +76,7 @@
     <file path="/app.humans.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357077689102" ignored="false" />
     <file path="/README.NEXT.md" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357132805648" ignored="false" />
     <file path="/about.groovy" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357107544712" ignored="false" />
-    <file path="/Animals.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357588718948" ignored="false" />
+    <file path="/Animals.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357591143532" ignored="false" />
     <file path="/backbone.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357112148420" ignored="false" />
     <file path="/AnimalsRepository.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357129339943" ignored="false" />
     <file path="$PROJECT_DIR$/../../senchatouch2/samples/punition/part.html" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357293405709" ignored="false" />
@@ -130,7 +126,7 @@
     <file path="$PROJECT_DIR$/../../recettesplay2/samples/postits/project/Build.scala" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357487583911" ignored="false" />
     <file path="$PROJECT_DIR$/../../recettesplay2/samples/postits/app/helpers/CouchDB.java" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357487670974" ignored="false" />
     <file path="/animal.js" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357504793092" ignored="false" />
-    <file path="/javamodelcontroller.java.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357537483527" ignored="false" />
+    <file path="/javamodelcontroller.java.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357591203881" ignored="false" />
     <file path="/javamodelroutes.java.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357538337887" ignored="false" />
     <file path="/javamodel.java.tpl" changelist="9a97fc95-3e47-497d-a728-e321819c3523" time="1357584909593" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -194,7 +190,27 @@
       <file leaf-file-name="Animals.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/repositories/Animals.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="193" selection-end="303" vertical-scroll-proportion="0.0">
+            <state line="11" column="53" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="javamodel.java.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/javamodel.java.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Human.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Human.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,21 +229,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CouchDB.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/couchdb/CouchDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Animal.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="36" selection-start="132" selection-end="142" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -235,21 +240,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Repository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/couchdb/Repository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="20" selection-start="0" selection-end="518" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Animals.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Animals.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/Animals.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="45" selection-start="431" selection-end="431" vertical-scroll-proportion="-1.5565218">
+            <state line="16" column="52" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -257,19 +251,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="javamodel.java.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/javamodel.java.tpl">
+      <file leaf-file-name="Router.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/routes/Router.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="26" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="javamodelcontroller.java.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/javamodelcontroller.java.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="26" selection-start="3270" selection-end="3270" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.15652174">
               <folding />
             </state>
           </provider>
@@ -278,19 +263,26 @@
       <file leaf-file-name="javamodelrepository.java.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/javamodelrepository.java.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="11" column="69" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/couchdb/Model.java">
+      <file leaf-file-name="javamodelcontroller.java.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/javamodelcontroller.java.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="76" column="40" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Humans.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/Humans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="18" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -315,21 +307,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/routes/Animals.java" />
-        <option value="$PROJECT_DIR$/src/routes/Router.java" />
         <option value="$PROJECT_DIR$/src/couchdb/CouchDB.java" />
         <option value="$PROJECT_DIR$/src/couchdb/Model.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/repositories/Repository.java" />
-        <option value="$PROJECT_DIR$/src/repositories/Humans.java" />
         <option value="$PROJECT_DIR$/src/couchdb/Repository.java" />
-        <option value="$PROJECT_DIR$/src/models/Human.java" />
         <option value="$PROJECT_DIR$/src/controllers/Humans.java" />
-        <option value="$PROJECT_DIR$/src/repositories/Animals.java" />
         <option value="$PROJECT_DIR$/src/models/Animal.java" />
-        <option value="$PROJECT_DIR$/tools/javamodel.java.tpl" />
-        <option value="$PROJECT_DIR$/tools/javamodelcontroller.java.tpl" />
-        <option value="$PROJECT_DIR$/tools/javamodelrepository.java.tpl" />
+        <option value="$PROJECT_DIR$/src/repositories/Animals.java" />
+        <option value="$PROJECT_DIR$/src/models/Human.java" />
+        <option value="$PROJECT_DIR$/src/repositories/Humans.java" />
         <option value="$PROJECT_DIR$/src/controllers/Animals.java" />
+        <option value="$PROJECT_DIR$/tools/javamodel.java.tpl" />
+        <option value="$PROJECT_DIR$/tools/javamodelrepository.java.tpl" />
+        <option value="$PROJECT_DIR$/tools/javamodelcontroller.java.tpl" />
+        <option value="$PROJECT_DIR$/src/routes/Router.java" />
       </list>
     </option>
   </component>
@@ -387,7 +379,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="317" />
+    <option name="x" value="50" />
     <option name="y" value="22" />
     <option name="width" value="1331" />
     <option name="height" value="746" />
@@ -1083,11 +1075,19 @@
       <created>1357539127805</created>
       <updated>1357539127806</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="refactorinc and docs">
+      <created>1357590146737</created>
+      <updated>1357590146737</updated>
+    </task>
+    <task id="LOCAL-00077" summary="refactorinc and docs">
+      <created>1357590215113</created>
+      <updated>1357590215114</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="317" y="22" width="1331" height="746" extended-state="6" />
+    <frame x="50" y="22" width="1331" height="746" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1101,6 +1101,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40894568" sideWeight="0.99648917" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299611" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1109,7 +1110,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40894568" sideWeight="0.99648917" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1195,13 +1195,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/routes/Humans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/Animals.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
@@ -1225,55 +1218,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/Humans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="108" selection-end="155" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/couchdb/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/javamodel.java.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/javamodelcontroller.java.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="26" selection-start="3270" selection-end="3270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/javamodelrepository.java.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/Humans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1289,15 +1236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="132" selection-end="142" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/couchdb/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="20" selection-start="0" selection-end="518" vertical-scroll-proportion="0.0">
@@ -1307,9 +1245,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/Humans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/repositories/Animals.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="193" selection-end="303" vertical-scroll-proportion="0.0">
+        <state line="11" column="53" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1318,10 +1283,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/Animals.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="45" selection-start="431" selection-end="431" vertical-scroll-proportion="-1.5565218">
+        <state line="16" column="52" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/javamodel.java.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/javamodelrepository.java.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="69" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/Humans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="18" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/javamodelcontroller.java.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="40" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.15652174">
+          <folding />
         </state>
       </provider>
     </entry>
