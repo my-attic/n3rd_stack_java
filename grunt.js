@@ -13,6 +13,7 @@ module.exports = function(grunt) {
         },
 
         watch: {
+            //files: ['**/*.java','!routes/*.groovy'], how to stop and restart / cmd / sh file
             files: '**/*.java',
             tasks: ['shell']
         }

@@ -4,7 +4,7 @@
 
 A java-noSQL(*) stack born to create SPA
 
->>(*): this is not mandatory, but the basic stack works with CouchDB.
+>>(*): this is not mandatory, but the basic stack works with CouchDB (you can use what you want).
 
 ##Installation
 
@@ -45,25 +45,26 @@ Open an other Terminal (jetty is still running) and type this command :
 
     ./tools/newmodel.js Animal '{"name":"String","species":"String"}'
 
-4 java files has been generated and `Router.java` has been updated :
+4 java files has been generated :
 
-    The file src/models/Animal.java was saved!
     The file src/repositories/Animals.java was saved!
     The file src/controllers/Animals.java was saved!
-    The file src/routes/Animals.java was saved!
-    The file src/routes/Router.java was saved!
+    The file routes/Animals.groovy was saved!
+    The file src/models/Animal.java was saved!
 
 - `src/models/Animal.java` : our model
 - `src/repositories/Animals.java` : code to persist model
 - `src/controllers/Animals.java` : CRUD REST services
-- `src/routes/Animals.java` : routes for calling services
-- `src/routes/Router.java` is generated from list of java files in `routes` package
+- `routes/Animals.groovy` : routes for calling services
+- All `routes/*.groovy` are run when N3rd.stack is starting ()
 
 In the same Terminal, type this command :
 
     mvn compile
 
->>If all is ok, you can see that **Jetty** restart and reload files
+>>If all is ok, you can see that **Jetty** restart and reload files (if you only change routes, but don't modifiy java code, you have to stop and restart `mvn jetty:run` ... I'm working on it)
+
+>>You can write your own models, routes, controllers etc. ...
 
 ###Test services
 
@@ -253,10 +254,12 @@ As soon as you modify java source code, **Grunt** detects the update and automat
 
 - see `src/controllers/GroovyDemo.java`
 - see `groovy/about.groovy`
+- see `routes/routes.groovy`
 
->>*this section is to detail more precisely*
+>>*this section has to be detailed more precisely*
 
 ##Next steps
 
 - MongoDB support
 - Redis support
+- Golo support

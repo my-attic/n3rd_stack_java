@@ -105,35 +105,11 @@ fs.readFile("./"+dir+"javamodelroutes.java.tpl", 'utf8', function(err, data) {
     var template = data;
     var source_code = mustache.to_html(template, {model_name:model_name,_model_name:_model_name});
 
-    fs.writeFile(dir_src+"src/routes/"+model_name+"s.java", source_code, function(err) {
+    fs.writeFile(dir_src+"routes/"+model_name+"s.groovy", source_code, function(err) {
         if (err) throw err;
-        console.log("The file", dir_src+"src/routes/"+model_name+"s.java", "was saved!");
+        console.log("The file", dir_src+"routes/"+model_name+"s.groovy", "was saved!");
 
-        fs.readdir(dir_src+"src/routes", function(err, data){
 
-            //console.log(data)
-            var routes = [];
-            data.filter(function(classname){ return classname!=="Router.java" }).forEach(function(classname){
-                if(path.extname(classname)==".java") routes.push(classname.split(".java")[0]);
-            });
-            //console.log(routes);
-
-            /*------------------------------------------------*/
-            /* Create Router.java                             */
-            /*------------------------------------------------*/
-
-            fs.readFile("./"+dir+"javaroutes.java.tpl", 'utf8', function(err, data) {
-                if (err) throw err;
-                var template = data;
-                var source_code = mustache.to_html(template, {routes:routes});
-
-                fs.writeFile(dir_src+"src/routes/Router.java", source_code, function(err) {
-                    if (err) throw err;
-                    console.log("The file", dir_src+"src/routes/Router.java", "was saved!");
-                });
-            });
-
-        });
     });
 });
 
