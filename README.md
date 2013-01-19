@@ -250,6 +250,40 @@ Or :
 
 As soon as you modify java source code, **Grunt** detects the update and automatically launch `mvn compile`. Then **Jetty** plugin detects update of `.class` files and reload the application.
 
+##Deployment
+
+###First
+
+Set environment variables in `config/config.groovy` :
+
+    httpport=9090
+    publicpath="public.n3rd"
+    homepage="index.html"
+
+###Packaging
+
+In N3rd.stack directory :
+
+    mvn compile assembly:single
+
+You'll find a new jar in `/target/` named `n3rd-{version}-standalone.jar`
+
+###Deploy & Run
+
+Copy in a directory :
+
+- the jar file
+- the public static files directory (ie : `public.n3rd`)
+- the `config` directory
+- the `routes` directory
+- if needed the `groovy` directory
+
+And :
+
+    java -jar n3rd-{version}-standalone.jar
+
+
+
 ##Groovy support
 
 - see `src/controllers/GroovyDemo.java`
@@ -263,3 +297,4 @@ As soon as you modify java source code, **Grunt** detects the update and automat
 - MongoDB support
 - Redis support
 - Golo support
+- war deployment ...
