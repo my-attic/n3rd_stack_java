@@ -3,13 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.k33g</groupId>
     <artifactId>n3rd-stack</artifactId>
-    <version>0.1</version>
+    <version>0.1B</version>
+
+    <packaging>jar</packaging>
+
+    <name>N3RD.STACK JAVA LOVE JS</name>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <build>
         <sourceDirectory>src</sourceDirectory>
         <testSourceDirectory>test</testSourceDirectory>
+
         <resources>
             <resource>
                 <directory>src</directory>
@@ -24,6 +30,7 @@
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>7.0.0.pre5</version>
+
                 <configuration>
                     <scanIntervalSeconds>1</scanIntervalSeconds>
                     <!--<webAppSourceDirectory>${basedir}/public.naked</webAppSourceDirectory>-->
@@ -38,7 +45,6 @@
                           <maxIdleTime>60000</maxIdleTime>
                         </connector>
                     </connectors>
-                    <!--<classesDirectory>${basedir}/target/classes</classesDirectory>-->
 
                     <scanTargets>
                         <scanTarget>out/*.*</scanTarget>
@@ -47,21 +53,6 @@
                         <scanTarget>src/*.java</scanTarget>-->
                     </scanTargets>
 
-                    <!--
-                    <scanTargetPatterns>
-                      <scanTargetPattern>
-                        <directory>src/other-resources</directory>
-                        <includes>
-                          <include>**/*.xml</include>
-                          <include>**/*.properties</include>
-                        </includes>
-                        <excludes>
-                          <exclude>**/myspecial.xml</exclude>
-                          <exclude>**/myspecial.properties</exclude>
-                        </excludes>
-                      </scanTargetPattern>
-                    </scanTargetPatterns>
-                    -->
                 </configuration>
             </plugin>
             <plugin>
@@ -73,6 +64,25 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2.2</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>Main</mainClass>
+                        </manifest>
+                    </archive>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <finalName>n3rd-${project.version}-standalone</finalName>
+                </configuration>
+            </plugin>
+
         </plugins>
 
     </build>
