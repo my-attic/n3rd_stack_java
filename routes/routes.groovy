@@ -1,4 +1,5 @@
 import org.k33g.helpers.Json
+import org.k33g.helpers.Router
 import spark.Request
 import spark.Response
 import spark.Route
@@ -6,6 +7,14 @@ import spark.Route
 import static spark.Spark.get
 
 /*=== routes for Application controller ===*/
+
+get(new Route("/routes") {
+    def handle(Request request, Response response) {
+        Router.routes()
+        response.type("application/json");
+        Json.toJson(";)")
+    }
+})
 
 
 get(new Route("/hello") {
