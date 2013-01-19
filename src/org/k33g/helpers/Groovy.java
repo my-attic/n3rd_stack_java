@@ -18,7 +18,7 @@ public class Groovy {
         Groovy.groovyScriptsPath = groovyScriptsPath;
     }
 
-    private static String groovyScriptsPath;
+    private static String groovyScriptsPath="";
 
     private static GroovyScriptEngine gse = null;
 
