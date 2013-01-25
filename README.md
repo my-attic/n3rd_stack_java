@@ -192,10 +192,10 @@ You can now type (in a terminal), this command :
 Now you have sample javascript and html source codes in `/public.n3rd` :
 
 - `public.n3rd/index.animals.html`
-- `public.n3rd/js/app.animals.js`
-- `public.n3rd/js/models/animal.js`
-- `public.n3rd/js/collection/animals.js`
-- `public.n3rd/js/controllers/animalsCtrl.js`
+- `public.n3rd/js/app/app.animals.js`
+- `public.n3rd/js/app/models/animal.js`
+- `public.n3rd/js/app/collection/animals.js`
+- `public.n3rd/js/app/controllers/animalsCtrl.js`
 
 Compile your code :
 
