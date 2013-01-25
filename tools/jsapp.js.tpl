@@ -3,7 +3,7 @@ var css = 'css!../../css/bootstrap.css'
 
 define([
     'jquery',
-    'js/controllers/{{_model_name}}sCtrl',
+    'app/controllers/{{_model_name}}sCtrl',
     css,
     cssMin
 ],

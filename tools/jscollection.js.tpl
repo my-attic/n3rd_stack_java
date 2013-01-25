@@ -1,6 +1,6 @@
 define([
     'backbone',
-    'js/models/{{_model_name}}'
+    'app/models/{{_model_name}}'
 ],
 function(Backbone, {{model_name}}) {
 

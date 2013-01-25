@@ -3,8 +3,8 @@ define([
     'backbone',
     'knockout',
     'knockback',
-    'js/models/{{_model_name}}',
-    'js/collections/{{_model_name}}s'
+    'app/models/{{_model_name}}',
+    'app/collections/{{_model_name}}s'
 ],
 function($, Backbone, ko, kb, {{model_name}}, {{model_name}}s) {
 
