@@ -46,9 +46,9 @@
     </table>
 </div>
 
-<script src="js/vendors/require.js"></script>
+<script data-main="js/app" src="js/vendors/require.js"></script>
 <script>
-    require(['jquery', 'js/app.{{_model_name}}s'], function ($, app) {
+    require(['app/app.{{_model_name}}s'], function (app) {
         app.init();
     });
 
