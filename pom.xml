@@ -33,8 +33,8 @@
 
                 <configuration>
                     <scanIntervalSeconds>1</scanIntervalSeconds>
-                    <!--<webAppSourceDirectory>${basedir}/public.naked</webAppSourceDirectory>-->
-                    <webAppSourceDirectory>${basedir}/public.n3rd</webAppSourceDirectory>
+                    <webAppSourceDirectory>${basedir}/public.naked</webAppSourceDirectory>
+                    <!--<webAppSourceDirectory>${basedir}/public.n3rd</webAppSourceDirectory>-->
                     <!--<webAppSourceDirectory>${basedir}/public.angular/app</webAppSourceDirectory>-->
                     <webAppConfig>
                         <contextPath>/</contextPath>
