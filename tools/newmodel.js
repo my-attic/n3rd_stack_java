@@ -130,9 +130,9 @@ if(front=="n3rd") {
             //properties:properties
         });
 
-        fs.writeFile(dir_src+"public.n3rd/js/models/"+_model_name+".js", source_code, function(err) {
+        fs.writeFile(dir_src+"public.n3rd/js/app/models/"+_model_name+".js", source_code, function(err) {
             if (err) throw err;
-            console.log("The file", dir_src+"public.n3rd/js/models/"+_model_name+".js", "was saved!");
+            console.log("The file", dir_src+"public.n3rd/js/app/models/"+_model_name+".js", "was saved!");
         });
     });
 
@@ -148,9 +148,9 @@ if(front=="n3rd") {
             //properties:properties
         });
 
-        fs.writeFile(dir_src+"public.n3rd/js/collections/"+_model_name+"s.js", source_code, function(err) {
+        fs.writeFile(dir_src+"public.n3rd/js/app/collections/"+_model_name+"s.js", source_code, function(err) {
             if (err) throw err;
-            console.log("The file", dir_src+"public.n3rd/js/collections/"+_model_name+"s.js", "was saved!");
+            console.log("The file", dir_src+"public.n3rd/js/app/collections/"+_model_name+"s.js", "was saved!");
         });
     });
 
@@ -176,9 +176,9 @@ if(front=="n3rd") {
             //properties:properties
         });
 
-        fs.writeFile(dir_src+"public.n3rd/js/controllers/"+_model_name+"sCtrl.js", source_code, function(err) {
+        fs.writeFile(dir_src+"public.n3rd/js/app/controllers/"+_model_name+"sCtrl.js", source_code, function(err) {
             if (err) throw err;
-            console.log("The file", dir_src+"public.n3rd/js/controllers/"+_model_name+"sCtrl.js", "was saved!");
+            console.log("The file", dir_src+"public.n3rd/app/js/controllers/"+_model_name+"sCtrl.js", "was saved!");
         });
     });
 
@@ -195,9 +195,9 @@ if(front=="n3rd") {
             //properties:properties
         });
 
-        fs.writeFile(dir_src+"public.n3rd/js/app."+_model_name+"s.js", source_code, function(err) {
+        fs.writeFile(dir_src+"public.n3rd/js/app/app."+_model_name+"s.js", source_code, function(err) {
             if (err) throw err;
-            console.log("The file", dir_src+"public.n3rd/js/app."+_model_name+"s.js", "was saved!");
+            console.log("The file", dir_src+"public.n3rd/js/app/app."+_model_name+"s.js", "was saved!");
         });
     });
 
