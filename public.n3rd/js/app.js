@@ -1,29 +1,26 @@
-var css = 'css!../../css/bootstrap.css'
-,   cssMin = 'css!../../css/bootstrap-responsive.css';
+// For any third party dependencies, like jQuery, place them in the lib folder (javascripts/vendors).
 
-define([
-    'jquery',
-    css,
-    cssMin
-],
-function ($, css, cssresponsive) {
+// Configure loading modules from the lib directory,
+// except for 'app' ones, which are in a sibling
+// directory.
+requirejs.config({
+    baseUrl: 'js/vendors',
+    paths: {
+        app: '../app'
+    },
 
-    return {
-        init: function () {
-            $(function (){
+    shim: {
 
-                $("h1").html("N3rd.stack:[java]");
-                $("h3").html("With TwitterBootstrap, Backbone, Knockout, KnockBack, Require.js, ...");
-                $("h2").html("by @k33g_org");
-                $("body").css("visibility","visible");  /*<body style="visibility:hidden">*/
-
-
-            });
+        underscore: {
+            exports: '_'
+        },
+        backbone: {
+            deps: ["underscore", "jquery"],
+            exports: "Backbone"
         }
-    };
-
+    }
 });
 
-
-
-
+// Start loading the main app file. Put all of
+// your application logic in there.
+//requirejs(['app/main']);
